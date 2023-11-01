@@ -1,0 +1,26 @@
+
+# 放行
+# DOMAIN-SUFFIX,mssdk3-normal-hl.zijieapi.com
+DOMAIN-SUFFIX,-normal-hl.zijieapi.com
+DOMAIN-SUFFIX,apissl.ksapisrv.com
+DOMAIN-SUFFIX,fq-tts.fqnovelvod.com
+
+# 排除生成后端域名
+DOMAIN-SUFFIX,wcc.best
+DOMAIN-SUFFIX,dler.io
+DOMAIN-SUFFIX,maoxiongnet.com
+DOMAIN-SUFFIX,xeton.dev
+DOMAIN-SUFFIX,id9.cc
+
+# github代理
+DOMAIN-SUFFIX,ghproxy.com
+DOMAIN-SUFFIX,fastgit.com
+DOMAIN-SUFFIX,fastgit.org
+DOMAIN-SUFFIX,fastgit.xyz
+DOMAIN-SUFFIX,gitmirror.com
+DOMAIN-SUFFIX,gh.api.99988866.xyz
+DOMAIN-SUFFIX,gitclone.com
+
+# 图片代理
+DOMAIN-SUFFIX,weserv.nl
+DOMAIN-SUFFIX,wsrv.nl
