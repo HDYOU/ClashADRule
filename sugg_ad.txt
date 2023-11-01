@@ -251,8 +251,8 @@ DOMAIN-SUFFIX,sdktmp.hubcloud.com.cn
 DOMAIN-SUFFIX,kde.qq.com
 DOMAIN-SUFFIX,report.nfa.qq.com
 DOMAIN-SUFFIX,sdkapiv2.bizport.cn
-DOMAIN-PREFIX,log.
-DOMAIN-PREFIX,ulog.
-DOMAIN-PREFIX,xlog.
-DOMAIN-PREFIX,ads.
+DOMAIN-KEYWORD,log.
+DOMAIN-KEYWORD,ulog.
+DOMAIN-KEYWORD,xlog.
+DOMAIN-KEYWORD,ads.
 IP-CIDR,0.0.0.0/32
