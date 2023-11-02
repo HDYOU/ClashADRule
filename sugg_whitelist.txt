@@ -24,3 +24,13 @@ DOMAIN-SUFFIX,gitclone.com
 # 图片代理
 DOMAIN-SUFFIX,weserv.nl
 DOMAIN-SUFFIX,wsrv.nl
+
+# 脚步
+DOMAIN-SUFFIX,greasyfork.org
+
+# 转换订阅
+DOMAIN-SUFFIX,sub-web.netlify.app
+
+
+
+
