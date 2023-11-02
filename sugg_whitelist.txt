@@ -6,7 +6,7 @@ DOMAIN-SUFFIX,apissl.ksapisrv.com
 DOMAIN-SUFFIX,fq-tts.fqnovelvod.com
 
 # 排除生成后端域名
-DOMAIN-SUFFIX,wcc.best
+# DOMAIN-SUFFIX,wcc.best
 DOMAIN-SUFFIX,dler.io
 DOMAIN-SUFFIX,maoxiongnet.com
 DOMAIN-SUFFIX,xeton.dev
@@ -29,7 +29,7 @@ DOMAIN-SUFFIX,wsrv.nl
 DOMAIN-SUFFIX,greasyfork.org
 
 # 转换订阅
-DOMAIN-SUFFIX,sub-web.netlify.app
+# DOMAIN-SUFFIX,sub-web.netlify.app
 
 # 番茄
 DOMAIN-SUFFIX,novel.snssdk.com
