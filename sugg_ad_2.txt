@@ -388,12 +388,20 @@ DOMAIN-SUFFIX,p9-be-pack-sign.pglstatp-toutiao.com
 
 DOMAIN-SUFFIX,dm-hl.toutiao.com
 DOMAIN-SUFFIX,i.snssdk.com
+
+DOMAIN-SUFFIX,tnc1-bjlgy.snssdk.com
+DOMAIN-SUFFIX,tnc3-bjlgy.snssdk.com
+DOMAIN-SUFFIX,tnc5-bjlgy.snssdk.com
+DOMAIN-SUFFIX,tnc3-alisc1.snssdk.com
+DOMAIN-SUFFIX,tnc5-alisc1.snssdk.com
+DOMAIN-SUFFIX,tnc11-alisc1.snssdk.com
+DOMAIN-SUFFIX,tnc3-alisc2.snssdk.com
+DOMAIN-SUFFIX,tnc5-alisc2.snssdk.com
+DOMAIN-SUFFIX,tnc11-alisc2.snssdk.com
 DOMAIN-SUFFIX,tnc3-aliec2.snssdk.com
 DOMAIN-SUFFIX,tnc5-aliec2.snssdk.com
 DOMAIN-SUFFIX,tnc11-aliec2.snssdk.com
-DOMAIN-SUFFIX,tnc3-aliec1.snssdk.com
-DOMAIN-SUFFIX,tnc5-aliec1.snssdk.com
-DOMAIN-SUFFIX,tnc11-aliec1.snssdk.com
+
 
 
 # 字节A/B测试
