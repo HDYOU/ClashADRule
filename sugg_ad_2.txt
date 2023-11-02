@@ -120,7 +120,7 @@ DOMAIN-SUFFIX,alicdn.com
 DOMAIN-SUFFIX,apmplus.volces.com
 DOMAIN-SUFFIX,ulogs.umeng.com
 DOMAIN-SUFFIX,api-gw.wtzw.com
-DOMAIN-SUFFIX,pinduoduo.com
+#DOMAIN-SUFFIX,pinduoduo.com
 DOMAIN-SUFFIX,rpt.gdt.qq.com
 DOMAIN-SUFFIX,acs.m.taobao.com
 DOMAIN-SUFFIX,pangolin-sdk-toutiao1.com
@@ -255,6 +255,10 @@ DOMAIN-KEYWORD,log.
 DOMAIN-KEYWORD,ulog.
 DOMAIN-KEYWORD,xlog.
 DOMAIN-KEYWORD,ads.
+DOMAIN-KEYWORD,report.
+DOMAIN-KEYWORD,ad.
+DOMAIN-KEYWORD,umeng
+DOMAIN-KEYWORD,abtest.
 IP-CIDR,0.0.0.0/32
 
 DOMAIN-KEYWORD,rtlog
@@ -401,6 +405,9 @@ DOMAIN-SUFFIX,tnc11-alisc2.snssdk.com
 DOMAIN-SUFFIX,tnc3-aliec2.snssdk.com
 DOMAIN-SUFFIX,tnc5-aliec2.snssdk.com
 DOMAIN-SUFFIX,tnc11-aliec2.snssdk.com
+
+DOMAIN-SUFFIX,pstatp.com
+
 
 
 
