@@ -25,12 +25,12 @@ DOMAIN-SUFFIX,gitclone.com
 DOMAIN-SUFFIX,weserv.nl
 DOMAIN-SUFFIX,wsrv.nl
 
-# 脚步
+# 脚本
 DOMAIN-SUFFIX,greasyfork.org
 
 # 转换订阅
 DOMAIN-SUFFIX,sub-web.netlify.app
 
-
-
-
+# 番茄
+DOMAIN-SUFFIX,novel.snssdk.com
+DOMAIN-SUFFIX,reading.snssdk.com
