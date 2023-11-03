@@ -206,7 +206,7 @@ rules:
   - DOMAIN-SUFFIX,gitclone.com,🎯 全球直连
   - DOMAIN-SUFFIX,gh.api.99988866.xyz,🎯 全球直连
   - DOMAIN-SUFFIX,weserv.nl,🎯 全球直连
-  - DOMAIN-SUFFIX,wsrv.nl
+  - DOMAIN-SUFFIX,wsrv.nl,🎯 全球直连
 
   - PROCESS-NAME,v2ray,🎯 全球直连
   - PROCESS-NAME,xray,🎯 全球直连
