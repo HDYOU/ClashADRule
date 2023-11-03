@@ -1,0 +1,285 @@
+mixed-port: 7890
+allow-lan: true
+bind-address: '*'
+mode: rule
+log-level: info
+external-controller: '127.0.0.1:9090'
+dns:
+  enable: true
+  ipv6: false
+  default-nameserver: [ 223.5.5.5, 119.29.29.29 ]
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  use-hosts: true
+  nameserver: [ 'https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query' ]
+  fallback: [ 'https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853' ]
+  fallback-filter: { geoip: true, ipcidr: [ 240.0.0.0/4, 0.0.0.0/32 ] }
+
+proxy-groups:
+  - name: 🚀 选择代理
+    proxies:
+      - 🔰 延迟最低
+      - 🎯 负载均衡
+      - ♻ 自动选择
+      - ✅ 手动选择
+    type: select
+  - interval: 300
+    name: 🎯 负载均衡
+    use:
+      - 订阅地址
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+  - interval: 300
+    name: ♻ 自动选择
+    proxies:
+      - 🎯 负载均衡
+      - 🎯 全球直连
+      - 🚫 拒接访问
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+  - interval: 300
+    name: 🔰 延迟最低
+    use:
+      - 订阅地址
+    tolerance: 20
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+  - name: ✅ 手动选择
+    use:
+      - 订阅地址
+    proxies:
+      - 🎯 全球直连
+      - 🚫 拒接访问
+    type: select
+  - name: 🌐 突破锁区
+    proxies:
+      - 🎯 全球直连
+      - 🚀 选择代理
+    type: select
+  - name: 🐟 漏网之鱼
+    proxies:
+      - 🚀 选择代理
+      - 🎯 全球直连
+      - REJECT
+    type: select
+  - name: ⛔ 广告拦截
+    proxies:
+      - 🚫 拒接访问
+      - 🎯 全球直连
+      - 🚀 选择代理
+    type: select
+  - name: 🎯 全球直连
+    proxies:
+      - DIRECT
+      - REJECT
+    type: select
+  - name: 🚫 拒接访问
+    proxies:
+      - DIRECT
+    type: select
+  - name: 🌍 全球加速
+    type: select
+    proxies:
+      - 🚀 选择代理
+      - 🎯 全球直连
+      - 🚫 拒接访问
+  - name: 📲 电报信息
+    type: select
+    proxies:
+      - 🚀 选择代理
+      - 🎯 全球直连
+      - 🚫 拒接访问
+  - name: 🚈 专业驾驶
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🚫 拒接访问
+      - 🚀 选择代理
+
+proxy-providers:
+  订阅地址:
+    type: http
+    url: "https://sub.xeton.dev/sub?target=clash&emoji=true&url=https://raw.githubusercontent.com/HDYOU/porxy/main/combine.base64|https://raw.githubusercontent.com/HDYOU/porxy/main/data/api_proxy.txt&exclude=国外直连|中国->&include=🇨🇳|中国|安徽省|移动|联通|电信|台湾|Taiwan|🇭🇰|香港|🇯🇵|日本|🇸🇬|新加坡|Singapore|🇰🇷|韩国|美国|ChatGPT解锁|线路|henet.uk|电报群|关注|延期|流量|重置|henet.uk|免费节点&sort=false&list=true"
+    interval: 3600
+    path: ./proxy_providers/NoMoreWalls.yml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+rule-providers:
+  adblock:
+    type: http
+    behavior: classical
+    path: ./rule_providers/adblock.yml
+    url: "https://raw.gitmirror.com/peasoft/NoMoreWalls/master/snippets/adblock.yml"
+    interval: 21600 #6h
+    format: yaml
+  proxy:
+    type: http
+    behavior: classical
+    path: ./rule_providers/proxy.yml
+    url: "https://raw.gitmirror.com/peasoft/NoMoreWalls/master/snippets/proxy.yml"
+    interval: 86400 #24h
+    format: yaml
+  direct:
+    type: http
+    behavior: classical
+    path: ./rule_providers/direct.yml
+    url: "https://raw.gitmirror.com/peasoft/NoMoreWalls/master/snippets/direct.yml"
+    interval: 86400 #24h
+    format: yaml
+  region:
+    type: http
+    behavior: classical
+    path: ./rule_providers/region.yml
+    url: "https://ghproxy.com/https://raw.gitmirror.com/peasoft/NoMoreWalls/master/snippets/region.yml"
+    interval: 86400 #24h
+    format: yaml
+  direct2:
+    behavior: "domain"
+    type: http
+    url: "https://raw.gitmirror.com/Loyalsoldier/clash-rules/release/direct.txt"
+    interval: 86400 #24h
+    path: ./ruleset/direct.yaml
+    format: yaml
+  telegramcidr:
+    type: http
+    behavior: ipcidr
+    url: "https://raw.gitmirror.com/Loyalsoldier/clash-rules/release/telegramcidr.txt"
+    path: ./ruleset/telegramcidr.yaml
+    interval: 86400 #24h
+    format: yaml
+  gfw:
+    type: http
+    behavior: classical
+#    url: "https://raw.gitmirror.com/Loyalsoldier/clash-rules/release/gfw.txt"
+    url: "https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ProxyGFWlist.yaml"
+    path: ./ruleset/gfw.yaml
+    interval: 86400 #24h
+    format: yaml
+  ChinaCompanyIp:
+    type: http
+    behavior: ipcidr
+    url: "https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaCompanyIp.yaml"
+    path: ./ruleset/gfw.yaml
+    interval: 86400 #24h
+    format: yaml
+  ChinaDomain:
+    type: http
+    behavior: classical
+    url: "https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaDomain.yaml"
+    path: ./ruleset/ChinaDomain.yaml
+    interval: 86400 #24h
+    format: yaml
+  ChinaIp:
+    type: http
+    behavior: ipcidr
+    url: "https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaIp.yaml"
+    path: ./ruleset/ChinaIp.yaml
+    interval: 86400 #24h
+    format: yaml
+  ChinaMedia:
+    type: http
+    behavior: classical
+    url: "https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaMedia.yaml"
+    path: ./ruleset/ChinaMedia.yaml
+    interval: 86400 #24h
+    format: yaml
+  LocalAreaNetwork:
+    type: http
+    behavior: classical
+    url: "https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/Providers/LocalAreaNetwork.yaml"
+    path: ./ruleset/LocalAreaNetwork.yaml
+    interval: 86400 #24h
+    format: yaml
+
+rules:
+  - DOMAIN-SUFFIX,googleapis.cn,🚀 选择代理 # 代理会自动切到国外，详情请见 README
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🎯 全球直连 # Google Play 国外/国内 服务器
+  - DOMAIN-SUFFIX,xn--ngstr-cn-8za9o.com,🎯 全球直连 # Google Play 纯国内 服务器，尚未完成部署
+
+  - DOMAIN-KEYWORD,kgithub,🎯 全球直连
+  - DOMAIN-KEYWORD,fastgit,🎯 全球直连
+  - DOMAIN-KEYWORD,ghproxy,🎯 全球直连
+  - DOMAIN-KEYWORD,gitmirror,🎯 全球直连
+  - DOMAIN-SUFFIX,gitclone.com,🎯 全球直连
+  - DOMAIN-SUFFIX,gh.api.99988866.xyz,🎯 全球直连
+  - DOMAIN-SUFFIX,weserv.nl,🎯 全球直连
+  - DOMAIN-SUFFIX,wsrv.nl
+
+  - PROCESS-NAME,v2ray,🎯 全球直连
+  - PROCESS-NAME,xray,🎯 全球直连
+  - PROCESS-NAME,naive,🎯 全球直连
+  - PROCESS-NAME,trojan,🎯 全球直连
+  - PROCESS-NAME,trojan-go,🎯 全球直连
+  - PROCESS-NAME,ss-local,🎯 全球直连
+  - PROCESS-NAME,privoxy,🎯 全球直连
+  - PROCESS-NAME,leaf,🎯 全球直连
+  - PROCESS-NAME,v2ray.exe,🎯 全球直连
+  - PROCESS-NAME,xray.exe,🎯 全球直连
+  - PROCESS-NAME,naive.exe,🎯 全球直连
+  - PROCESS-NAME,trojan.exe,🎯 全球直连
+  - PROCESS-NAME,trojan-go.exe,🎯 全球直连
+  - PROCESS-NAME,ss-local.exe,🎯 全球直连
+  - PROCESS-NAME,privoxy.exe,🎯 全球直连
+  - PROCESS-NAME,leaf.exe,🎯 全球直连
+  - PROCESS-NAME,Surge,🎯 全球直连
+  - PROCESS-NAME,Surge 2,🎯 全球直连
+  - PROCESS-NAME,Surge 3,🎯 全球直连
+  - PROCESS-NAME,Surge 4,🎯 全球直连
+  - PROCESS-NAME,Surge%202,🎯 全球直连
+  - PROCESS-NAME,Surge%203,🎯 全球直连
+  - PROCESS-NAME,Surge%204,🎯 全球直连
+  - PROCESS-NAME,Thunder,🎯 全球直连
+  - PROCESS-NAME,DownloadService,🎯 全球直连
+  - PROCESS-NAME,qBittorrent,🎯 全球直连
+  - PROCESS-NAME,Transmission,🎯 全球直连
+  - PROCESS-NAME,fdm,🎯 全球直连
+  - PROCESS-NAME,aria2c,🎯 全球直连
+  - PROCESS-NAME,Folx,🎯 全球直连
+  - PROCESS-NAME,NetTransport,🎯 全球直连
+  - PROCESS-NAME,uTorrent,🎯 全球直连
+  - PROCESS-NAME,WebTorrent,🎯 全球直连
+  - PROCESS-NAME,aria2c.exe,🎯 全球直连
+  - PROCESS-NAME,BitComet.exe,🎯 全球直连
+  - PROCESS-NAME,fdm.exe,🎯 全球直连
+  - PROCESS-NAME,NetTransport.exe,🎯 全球直连
+  - PROCESS-NAME,qbittorrent.exe,🎯 全球直连
+  - PROCESS-NAME,Thunder.exe,🎯 全球直连
+  - PROCESS-NAME,ThunderVIP.exe,🎯 全球直连
+  - PROCESS-NAME,transmission-daemon.exe,🎯 全球直连
+  - PROCESS-NAME,transmission-qt.exe,🎯 全球直连
+  - PROCESS-NAME,uTorrent.exe,🎯 全球直连
+  - PROCESS-NAME,WebTorrent.exe,🎯 全球直连
+  - DOMAIN,steamstore-a.akamaihd.net,🎯 全球直连
+  - DOMAIN,steamcdn-a.akamaihd.net,🎯 全球直连
+  - DOMAIN,api.steampowered.com,🎯 全球直连
+  - DOMAIN,store.steampowered.com,🎯 全球直连
+  - DOMAIN,clash.razord.top,🎯 全球直连
+  - DOMAIN,yacd.haishan.me,🎯 全球直连
+  - DOMAIN,www.biqugeu.net,🚈 专业驾驶
+  - DOMAIN,www.cool18.com,🚈 专业驾驶
+  - DOMAIN-KEYWORD,diyibanzhu,🚈 专业驾驶
+  - DOMAIN-SUFFIX,cool18.com,🚈 专业驾驶
+  - DOMAIN-KEYWORD,cunhua,🚈 专业驾驶
+
+  - RULE-SET,adblock,⛔ 广告拦截
+  - IP-CIDR,0.0.0.0/32,⛔ 广告拦截
+  - RULE-SET,ChinaCompanyIp,🎯 全球直连
+  - RULE-SET,ChinaCompanyIp,🎯 全球直连
+  - RULE-SET,ChinaDomain,🎯 全球直连
+  - RULE-SET,ChinaMedia,🎯 全球直连
+  - RULE-SET,ChinaIp,🎯 全球直连
+  - RULE-SET,LocalAreaNetwork,🎯 全球直连
+
+  - DOMAIN-SUFFIX,cn,🎯 全球直连
+  - DOMAIN-KEYWORD,-cn,🎯 全球直连
+  - RULE-SET,region,🌐 突破锁区
+  - RULE-SET,direct,🎯 全球直连
+  - RULE-SET,direct2,🎯 全球直连
+  - RULE-SET,gfw,🌍 全球加速
+  - RULE-SET,telegramcidr,📲 电报信息
+  - GEOIP,CN,🎯 全球直连
+  - RULE-SET,proxy,🌍 全球加速
+  - MATCH,🐟 漏网之鱼
