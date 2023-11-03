@@ -160,7 +160,7 @@ rule-providers:
     format: yaml
   ChinaCompanyIp:
     type: http
-    behavior: ipcidr
+    behavior: classical
     url: "https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaCompanyIp.yaml"
     path: ./ruleset/gfw.yaml
     interval: 86400 #24h
@@ -174,7 +174,7 @@ rule-providers:
     format: yaml
   ChinaIp:
     type: http
-    behavior: ipcidr
+    behavior: classical
     url: "https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaIp.yaml"
     path: ./ruleset/ChinaIp.yaml
     interval: 86400 #24h
