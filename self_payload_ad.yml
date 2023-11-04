@@ -1,4 +1,8 @@
 payload:
+- DOMAIN-KEYWORD,hl.snssdk.com
+- DOMAIN-KEYWORD,lf.snssdk.com
+
+- DOMAIN-SUFFIX,vcs.zijieapi.com
 - DOMAIN-SUFFIX,sdk.e.qq.com
 - DOMAIN-SUFFIX,p3-webcast-sign.douyinpic.com
 - DOMAIN-SUFFIX,adash.man.aliyuncs.com
@@ -447,6 +451,9 @@ payload:
 - DOMAIN-SUFFIX,webcast-open-lf.douyin.com
 - DOMAIN-SUFFIX,webcast3-open-lf.douyin.com
 - DOMAIN-SUFFIX,webcast5-open-lf.douyin.com
+- DOMAIN-SUFFIX,webcast-open-hl.douyin.com
+- DOMAIN-SUFFIX,webcast3-open-hl.douyin.com
+- DOMAIN-SUFFIX,webcast5-open-hl.douyin.com
 
 - DOMAIN-SUFFIX,datacollector-drcn.dt.hicloud.com
 
