@@ -290,6 +290,13 @@ payload:
 - DOMAIN-KEYWORD,reading.douyin.com
 - DOMAIN-KEYWORD,sign.douyinpic.com
 - DOMAIN-KEYWORD,-heycan-dy-sign.byteimg.com
+- DOMAIN-KEYWORD,analytics.
+
+- DOMAIN-SUFFIX,tr.byteurl.cn
+
+- DOMAIN-KEYWORD,-normal-hl.zijieapi.com
+- DOMAIN-KEYWORD,-normal-lf.zijieapi.com
+
 
 - DOMAIN-SUFFIX,livewebbs2.msstatic.com
 - DOMAIN-SUFFIX,web3610.top
