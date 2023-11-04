@@ -11,9 +11,10 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   use-hosts: true
-  nameserver: [ 'https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query' ]
+  nameserver: [ 'https://853.66a.net:443/dns-query', 'https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query' ]
   fallback: [ 'https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853' ]
   fallback-filter: { geoip: true, ipcidr: [ 240.0.0.0/4, 0.0.0.0/32 ] }
+  fake-ip-filter: ['*.lan', '240.0.0.0/4', '0.0.0.0/32']
 
 proxy-groups:
   - name: 🚀 选择代理
@@ -28,21 +29,23 @@ proxy-groups:
     use:
       - 订阅地址
     type: load-balance
-    url: http://www.gstatic.com/generate_204
-  - interval: 300
-    name: ♻ 自动选择
-    proxies:
-      - 🎯 负载均衡
-      - 🎯 全球直连
-      - 🚫 拒接访问
-    type: fallback
+    lazy: true
     url: http://www.gstatic.com/generate_204
   - interval: 300
     name: 🔰 延迟最低
     use:
       - 订阅地址
     tolerance: 20
+    lazy: true
     type: url-test
+    url: http://www.gstatic.com/generate_204
+  - interval: 300
+    name: ♻ 自动选择
+    use:
+      - 订阅地址
+    type: fallback
+    tolerance: 50
+    lazy: true
     url: http://www.gstatic.com/generate_204
   - name: ✅ 手动选择
     use:
@@ -51,6 +54,7 @@ proxy-groups:
       - 🎯 全球直连
       - 🚫 拒接访问
     type: select
+    lazy: true
   - name: 🌐 突破锁区
     proxies:
       - 🎯 全球直连
@@ -60,7 +64,7 @@ proxy-groups:
     proxies:
       - 🚀 选择代理
       - 🎯 全球直连
-      - REJECT
+      - 🚫 拒接访问
     type: select
   - name: ⛔ 广告拦截
     proxies:
@@ -75,7 +79,7 @@ proxy-groups:
     type: select
   - name: 🚫 拒接访问
     proxies:
-      - DIRECT
+      - REJECT
     type: select
   - name: 🌍 全球加速
     type: select
@@ -99,13 +103,13 @@ proxy-groups:
 proxy-providers:
   订阅地址:
     type: http
-    url: "https://sub.xeton.dev/sub?target=clash&emoji=true&url=https://raw.githubusercontent.com/HDYOU/porxy/main/combine.base64|https://raw.githubusercontent.com/HDYOU/porxy/main/data/api_proxy.txt&exclude=国外直连|中国->&include=🇨🇳|中国|安徽省|移动|联通|电信|台湾|Taiwan|🇭🇰|香港|🇯🇵|日本|🇸🇬|新加坡|Singapore|🇰🇷|韩国|美国|ChatGPT解锁|线路|henet.uk|电报群|关注|延期|流量|重置|henet.uk|免费节点&sort=false&list=true"
+    url: "https://sub.xeton.dev/sub?target=clash&emoji=true&url=https://raw.githubusercontent.com/HDYOU/porxy/main/combine.base64|https://raw.githubusercontent.com/HDYOU/porxy/main/data/api_proxy.txt&exclude=国外直连|国->|台湾混合|📡 PING-&include=🇨🇳|中国|安徽省|移动|联通|电信|台湾|Taiwan|🇭🇰|香港|🇯🇵|日本|🇸🇬|新加坡|Singapore|🇰🇷|韩国|美国|ChatGPT解锁|线路|henet.uk|电报群|关注|延期|流量|重置|henet.uk|免费节点&sort=false&list=true"
     interval: 3600
     path: ./proxy_providers/NoMoreWalls.yml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
+    # health-check:
+    #  enable: true
+    #  interval: 600
+    #  url: http://www.gstatic.com/generate_204
 
 rule-providers:
   adblock:
@@ -133,15 +137,15 @@ rule-providers:
     type: http
     behavior: classical
     path: ./rule_providers/region.yml
-    url: "https://ghproxy.com/https://raw.gitmirror.com/peasoft/NoMoreWalls/master/snippets/region.yml"
+    url: "https://raw.gitmirror.com/peasoft/NoMoreWalls/master/snippets/region.yml"
     interval: 86400 #24h
     format: yaml
   direct2:
-    behavior: "domain"
+    behavior: domain
     type: http
     url: "https://raw.gitmirror.com/Loyalsoldier/clash-rules/release/direct.txt"
     interval: 86400 #24h
-    path: ./ruleset/direct.yaml
+    path: ./ruleset/direct2.yaml
     format: yaml
   telegramcidr:
     type: http
@@ -150,17 +154,17 @@ rule-providers:
     path: ./ruleset/telegramcidr.yaml
     interval: 86400 #24h
     format: yaml
-  gfw:
+  ProxyGFWlist:
     type: http
     behavior: classical
 #    url: "https://raw.gitmirror.com/Loyalsoldier/clash-rules/release/gfw.txt"
     url: "https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ProxyGFWlist.yaml"
-    path: ./ruleset/gfw.yaml
+    path: ./ruleset/ProxyGFWlist.yaml
     interval: 86400 #24h
     format: yaml
   ChinaCompanyIp:
     type: http
-    behavior: classical
+    behavior: ipcidr
     url: "https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaCompanyIp.yaml"
     path: ./ruleset/gfw.yaml
     interval: 86400 #24h
@@ -174,7 +178,7 @@ rule-providers:
     format: yaml
   ChinaIp:
     type: http
-    behavior: classical
+    behavior: ipcidr
     url: "https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaIp.yaml"
     path: ./ruleset/ChinaIp.yaml
     interval: 86400 #24h
@@ -193,6 +197,21 @@ rule-providers:
     path: ./ruleset/LocalAreaNetwork.yaml
     interval: 86400 #24h
     format: yaml
+  自定义广告拦截:
+    type: http
+    behavior: classical
+    url: "https://raw.gitmirror.com//HDYOU/ClashADRule/main/self_payload_ad.yml"
+    path: ./ruleset/自定义广告拦截.yaml
+    interval: 86400 #24h
+    format: yaml
+  自定义广告白名单:
+    type: http
+    behavior: classical
+    url: "https://raw.gitmirror.com//HDYOU/ClashADRule/main/self_payload_whitelist.yml"
+    path: ./ruleset/自定义广告白名单.yaml
+    interval: 86400 #24h
+    format: yaml
+
 
 rules:
   - DOMAIN-SUFFIX,googleapis.cn,🚀 选择代理 # 代理会自动切到国外，详情请见 README
@@ -264,9 +283,11 @@ rules:
   - DOMAIN-SUFFIX,cool18.com,🚈 专业驾驶
   - DOMAIN-KEYWORD,cunhua,🚈 专业驾驶
 
+  - RULE-SET,自定义广告白名单,🎯 全球直连
+  - RULE-SET,自定义广告拦截,⛔ 广告拦截
   - RULE-SET,adblock,⛔ 广告拦截
   - IP-CIDR,0.0.0.0/32,⛔ 广告拦截
-  - RULE-SET,ChinaCompanyIp,🎯 全球直连
+
   - RULE-SET,ChinaCompanyIp,🎯 全球直连
   - RULE-SET,ChinaDomain,🎯 全球直连
   - RULE-SET,ChinaMedia,🎯 全球直连
@@ -278,7 +299,7 @@ rules:
   - RULE-SET,region,🌐 突破锁区
   - RULE-SET,direct,🎯 全球直连
   - RULE-SET,direct2,🎯 全球直连
-  - RULE-SET,gfw,🌍 全球加速
+  - RULE-SET,ProxyGFWlist,🌍 全球加速
   - RULE-SET,telegramcidr,📲 电报信息
   - GEOIP,CN,🎯 全球直连
   - RULE-SET,proxy,🌍 全球加速
