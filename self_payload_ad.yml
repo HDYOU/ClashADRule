@@ -293,7 +293,7 @@ payload:
 # 番茄图片
 - DOMAIN-KEYWORD,reading.douyin.com
 - DOMAIN-KEYWORD,sign.douyinpic.com
-- DOMAIN-KEYWORD,-heycan-dy-sign.byteimg.com
+#- DOMAIN-KEYWORD,-heycan-dy-sign.byteimg.com #评论区图片
 - DOMAIN-KEYWORD,analytics.
 
 - DOMAIN-SUFFIX,tr.byteurl.cn
