@@ -1,0 +1,85 @@
+mixed-port: 7890
+allow-lan: true
+bind-address: '*'
+mode: rule
+log-level: info
+external-controller: '127.0.0.1:9090'
+dns:
+  enable: true
+  ipv6: false
+  default-nameserver: [ 223.5.5.5, 119.29.29.29 ]
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  use-hosts: true
+  nameserver: [ 'https://853.66a.net:443/dns-query', 'https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query' ]
+  # 当配置 fallback 时，会查询 nameserver 中返回的 IP 是否为 CN，非必要配置
+  # 当不是 CN，则使用 fallback 中的 DNS 查询结果
+  # 确保配置 fallback 时能够正常查询
+  fallback: [ 'https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853' ]
+  # 配置 fallback 使用条件
+  fallback-filter:
+    geoip: true # 配置是否使用 geoip
+    geoip-code: CN # 当 nameserver 域名的 IP 查询 geoip 库为 CN 时，不使用 fallback 中的 DNS 查询结果
+  
+  #   配置强制 fallback，优先于 IP 判断，具体分类自行查看 geosite 库
+    geosite:
+     - gfw
+  #   如果不匹配 ipcidr 则使用 nameservers 中的结果
+    ipcidr:
+      - 240.0.0.0/4
+    domain:
+      - '+.google.com'
+      - '+.facebook.com'
+      - '+.youtube.com'
+
+  # 配置查询域名使用的 DNS 服务器
+  nameserver-policy:
+    #   'www.baidu.com': '114.114.114.114'
+    #   '+.internal.crop.com': '10.0.0.1'
+    "geosite:cn,private,apple":
+      - https://doh.pub/dns-query
+      - https://dns.alidns.com/dns-query
+    "www.baidu.com,+.google.cn": [223.5.5.5, https://dns.alidns.com/dns-query]
+    ## global，dns 为 rule-providers 中的名为 global 和 dns 规则订阅，
+    ## 且 behavior 必须为 domain/classical，当为 classical 时仅会生效域名类规则
+    # "rule-set:global,dns": 8.8.8.8
+    "rule-set:自定义广告白名单": [223.5.5.5, https://dns.alidns.com/dns-query]
+    "rule-set:adblock,自定义广告拦截": rcode://success
+    
+
+  # 配置不使用fake-ip的域名
+  fake-ip-filter:
+    - '*.lan'
+    - localhost.ptlogin2.qq.com
+
+rules:
+# traffic match external rules defined in 'https://ruleset.com/cn' will be sent to 'ProxyVMess'
+RULE-SET,https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list,🎯 全球直连
+RULE-SET,https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list,🎯 全球直连
+RULE-SET,https://raw.gitmirror.com/HDYOU/ClashADRule/main/sugg_whitelist.txt,🎯 全球直连
+
+# RULE-SET,https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list,🛑 全球拦截
+# RULE-SET,https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list,🛑 全球拦截
+# RULE-SET,https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyList.list,🛑 AdBlock
+# RULE-SET,https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyListChina.list,🛑 AdBlock
+# RULE-SET,https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyPrivacy.list,🛑 AdBlock
+# RULE-SET,https://raw.gitmirror.com/privacy-protection-tools/anti-AD/master/anti-ad-surge.txt,🛑 AdBlock
+# RULE-SET,https://raw.gitmirror.com/HDYOU/ClashADRule/anti-ad-surge.list,🛑 全球拦截
+
+RULE-SET,https://raw.gitmirror.com/HDYOU/ClashADRule/main/sugg_ad_2.txt,🛑 全球拦截
+RULE-SET,https://raw.gitmirror.com/privacy-protection-tools/anti-AD/master/anti-ad-surge.txt,🛑 全球拦截
+
+RULE-SET,https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list,🌍 国外加速
+RULE-SET,https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list,🎯 全球直连
+RULE-SET,https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list,🎯 全球直连
+RULE-SET,https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list,Ⓜ️ 微软服务
+
+# RULE-SET,https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list,🍎 苹果服务
+
+RULE-SET,https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list,📲 电报信息
+RULE-SET,https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list,🌍 国外加速
+RULE-SET,https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/ProxyLite.list,🌍 国外加速
+RULE-SET,https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list,🎯 全球直连
+RULE-SET,https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list,🎯 全球直连
+
+GEOIP,CN,🎯 全球直连
