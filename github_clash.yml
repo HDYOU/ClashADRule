@@ -12,9 +12,45 @@ dns:
   fake-ip-range: 198.18.0.1/16
   use-hosts: true
   nameserver: [ 'https://853.66a.net:443/dns-query', 'https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query' ]
+  # 当配置 fallback 时，会查询 nameserver 中返回的 IP 是否为 CN，非必要配置
+  # 当不是 CN，则使用 fallback 中的 DNS 查询结果
+  # 确保配置 fallback 时能够正常查询
   fallback: [ 'https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853' ]
-  fallback-filter: { geoip: true, ipcidr: [ 240.0.0.0/4, 0.0.0.0/32 ] }
-  fake-ip-filter: ['*.lan', '240.0.0.0/4', '0.0.0.0/32']
+  # 配置 fallback 使用条件
+  fallback-filter:
+    geoip: true # 配置是否使用 geoip
+    geoip-code: CN # 当 nameserver 域名的 IP 查询 geoip 库为 CN 时，不使用 fallback 中的 DNS 查询结果
+  
+  #   配置强制 fallback，优先于 IP 判断，具体分类自行查看 geosite 库
+    geosite:
+     - gfw
+  #   如果不匹配 ipcidr 则使用 nameservers 中的结果
+    ipcidr:
+      - 240.0.0.0/4
+    domain:
+      - '+.google.com'
+      - '+.facebook.com'
+      - '+.youtube.com'
+
+  # 配置查询域名使用的 DNS 服务器
+  nameserver-policy:
+    #   'www.baidu.com': '114.114.114.114'
+    #   '+.internal.crop.com': '10.0.0.1'
+    "geosite:cn,private,apple":
+      - https://doh.pub/dns-query
+      - https://dns.alidns.com/dns-query
+    "www.baidu.com,+.google.cn": [223.5.5.5, https://dns.alidns.com/dns-query]
+    ## global，dns 为 rule-providers 中的名为 global 和 dns 规则订阅，
+    ## 且 behavior 必须为 domain/classical，当为 classical 时仅会生效域名类规则
+    # "rule-set:global,dns": 8.8.8.8
+    "rule-set:自定义广告白名单": [223.5.5.5, https://dns.alidns.com/dns-query]
+    "rule-set:adblock,自定义广告拦截": rcode://success
+    
+
+  # 配置不使用fake-ip的域名
+  fake-ip-filter:
+    - '*.lan'
+    - localhost.ptlogin2.qq.com
 
 proxy-groups:
   - name: 🚀 选择代理
@@ -35,7 +71,7 @@ proxy-groups:
     name: 🔰 延迟最低
     use:
       - 订阅地址
-    tolerance: 20
+    tolerance: 50
     lazy: true
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -211,6 +247,13 @@ rule-providers:
     path: ./ruleset/自定义广告白名单.yaml
     interval: 86400 #24h
     format: yaml
+  MetaCubeX-cn-domain:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/cn_domain.yaml
+    type: http
+    url: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/cn_domain.yaml"
+
 
 
 rules:
@@ -277,16 +320,27 @@ rules:
   - DOMAIN,store.steampowered.com,🎯 全球直连
   - DOMAIN,clash.razord.top,🎯 全球直连
   - DOMAIN,yacd.haishan.me,🎯 全球直连
+  
   - DOMAIN,www.biqugeu.net,🚈 专业驾驶
   - DOMAIN,www.cool18.com,🚈 专业驾驶
   - DOMAIN-KEYWORD,diyibanzhu,🚈 专业驾驶
   - DOMAIN-SUFFIX,cool18.com,🚈 专业驾驶
   - DOMAIN-KEYWORD,cunhua,🚈 专业驾驶
+  
 
   - RULE-SET,自定义广告白名单,🎯 全球直连
   - RULE-SET,自定义广告拦截,⛔ 广告拦截
   - RULE-SET,adblock,⛔ 广告拦截
   - IP-CIDR,0.0.0.0/32,⛔ 广告拦截
+
+  - RULE-SET,MetaCubeX-cn-domain,🎯 全球直连
+
+  #GEOIP规则
+  - GEOIP,private,🎯 全球直连,no-resolve
+  # - GEOIP,telegram,📲 电报信息
+  - GEOIP,JP,🌍 全球加速
+  - GEOIP,CN,🎯 全球直连
+#  - DST-PORT,80/8080/443/8443,🌍 全球加速
 
   - RULE-SET,ChinaCompanyIp,🎯 全球直连
   - RULE-SET,ChinaDomain,🎯 全球直连
