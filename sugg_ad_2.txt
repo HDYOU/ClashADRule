@@ -356,8 +356,8 @@ DOMAIN-SUFFIX,bsync3-normal-lf.zijieapi.com
 DOMAIN-SUFFIX,bsync5-normal-lf.zijieapi.com
 DOMAIN-SUFFIX,mon.toutiao.com
 DOMAIN-SUFFIX,dzy.r147emh.com
-DOMAIN-SUFFIX,api3-normal-hl.fqnovel.com
-DOMAIN-SUFFIX,api5-normal-hl.fqnovel.com
+#DOMAIN-SUFFIX,api3-normal-hl.fqnovel.com
+#DOMAIN-SUFFIX,api5-normal-hl.fqnovel.com
 DOMAIN-SUFFIX,minigame3-normal-hl.zijieapi.com
 DOMAIN-SUFFIX,minigame5-normal-hl.zijieapi.com
 DOMAIN-SUFFIX,gecko3-hl.zijieapi.com
