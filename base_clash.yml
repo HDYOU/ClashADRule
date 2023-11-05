@@ -52,34 +52,213 @@ dns:
     - '*.lan'
     - localhost.ptlogin2.qq.com
 
+rule-providers:
+  adblock:
+    type: http
+    behavior: classical
+    path: ./rule_providers/adblock.yml
+    url: "https://raw.gitmirror.com/peasoft/NoMoreWalls/master/snippets/adblock.yml"
+    interval: 21600 #6h
+    format: yaml
+  proxy:
+    type: http
+    behavior: classical
+    path: ./rule_providers/proxy.yml
+    url: "https://raw.gitmirror.com/peasoft/NoMoreWalls/master/snippets/proxy.yml"
+    interval: 86400 #24h
+    format: yaml
+  direct:
+    type: http
+    behavior: classical
+    path: ./rule_providers/direct.yml
+    url: "https://raw.gitmirror.com/peasoft/NoMoreWalls/master/snippets/direct.yml"
+    interval: 86400 #24h
+    format: yaml
+  region:
+    type: http
+    behavior: classical
+    path: ./rule_providers/region.yml
+    url: "https://raw.gitmirror.com/peasoft/NoMoreWalls/master/snippets/region.yml"
+    interval: 86400 #24h
+    format: yaml
+  direct2:
+    behavior: domain
+    type: http
+    url: "https://raw.gitmirror.com/Loyalsoldier/clash-rules/release/direct.txt"
+    interval: 86400 #24h
+    path: ./ruleset/direct2.yaml
+    format: yaml
+  telegramcidr:
+    type: http
+    behavior: ipcidr
+    url: "https://raw.gitmirror.com/Loyalsoldier/clash-rules/release/telegramcidr.txt"
+    path: ./ruleset/telegramcidr.yaml
+    interval: 86400 #24h
+    format: yaml
+  ProxyGFWlist:
+    type: http
+    behavior: classical
+#    url: "https://raw.gitmirror.com/Loyalsoldier/clash-rules/release/gfw.txt"
+    url: "https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ProxyGFWlist.yaml"
+    path: ./ruleset/ProxyGFWlist.yaml
+    interval: 86400 #24h
+    format: yaml
+  ChinaCompanyIp:
+    type: http
+    behavior: ipcidr
+    url: "https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaCompanyIp.yaml"
+    path: ./ruleset/gfw.yaml
+    interval: 86400 #24h
+    format: yaml
+  ChinaDomain:
+    type: http
+    behavior: classical
+    url: "https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaDomain.yaml"
+    path: ./ruleset/ChinaDomain.yaml
+    interval: 86400 #24h
+    format: yaml
+  ChinaIp:
+    type: http
+    behavior: ipcidr
+    url: "https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaIp.yaml"
+    path: ./ruleset/ChinaIp.yaml
+    interval: 86400 #24h
+    format: yaml
+  ChinaMedia:
+    type: http
+    behavior: classical
+    url: "https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaMedia.yaml"
+    path: ./ruleset/ChinaMedia.yaml
+    interval: 86400 #24h
+    format: yaml
+  LocalAreaNetwork:
+    type: http
+    behavior: classical
+    url: "https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/Providers/LocalAreaNetwork.yaml"
+    path: ./ruleset/LocalAreaNetwork.yaml
+    interval: 86400 #24h
+    format: yaml
+  自定义广告拦截:
+    type: http
+    behavior: classical
+    url: "https://raw.gitmirror.com//HDYOU/ClashADRule/main/self_payload_ad.yml"
+    path: ./ruleset/自定义广告拦截.yaml
+    interval: 86400 #24h
+    format: yaml
+  自定义广告白名单:
+    type: http
+    behavior: classical
+    url: "https://raw.gitmirror.com//HDYOU/ClashADRule/main/self_payload_whitelist.yml"
+    path: ./ruleset/自定义广告白名单.yaml
+    interval: 86400 #24h
+    format: yaml
+  MetaCubeX-cn-domain:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/cn_domain.yaml
+    type: http
+    url: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/cn_domain.yaml"
+
+
+
 rules:
-# traffic match external rules defined in 'https://ruleset.com/cn' will be sent to 'ProxyVMess'
-RULE-SET,https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list,🎯 全球直连
-RULE-SET,https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list,🎯 全球直连
-RULE-SET,https://raw.gitmirror.com/HDYOU/ClashADRule/main/sugg_whitelist.txt,🎯 全球直连
+  - DOMAIN-SUFFIX,googleapis.cn,🚀 选择代理 # 代理会自动切到国外，详情请见 README
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🎯 全球直连 # Google Play 国外/国内 服务器
+  - DOMAIN-SUFFIX,xn--ngstr-cn-8za9o.com,🎯 全球直连 # Google Play 纯国内 服务器，尚未完成部署
 
-# RULE-SET,https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list,🛑 全球拦截
-# RULE-SET,https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list,🛑 全球拦截
-# RULE-SET,https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyList.list,🛑 AdBlock
-# RULE-SET,https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyListChina.list,🛑 AdBlock
-# RULE-SET,https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyPrivacy.list,🛑 AdBlock
-# RULE-SET,https://raw.gitmirror.com/privacy-protection-tools/anti-AD/master/anti-ad-surge.txt,🛑 AdBlock
-# RULE-SET,https://raw.gitmirror.com/HDYOU/ClashADRule/anti-ad-surge.list,🛑 全球拦截
+  - DOMAIN-KEYWORD,kgithub,🎯 全球直连
+  - DOMAIN-KEYWORD,fastgit,🎯 全球直连
+  - DOMAIN-KEYWORD,ghproxy,🎯 全球直连
+  - DOMAIN-KEYWORD,gitmirror,🎯 全球直连
+  - DOMAIN-SUFFIX,gitclone.com,🎯 全球直连
+  - DOMAIN-SUFFIX,gh.api.99988866.xyz,🎯 全球直连
+  - DOMAIN-SUFFIX,weserv.nl,🎯 全球直连
+  - DOMAIN-SUFFIX,wsrv.nl,🎯 全球直连
 
-RULE-SET,https://raw.gitmirror.com/HDYOU/ClashADRule/main/sugg_ad_2.txt,🛑 全球拦截
-RULE-SET,https://raw.gitmirror.com/privacy-protection-tools/anti-AD/master/anti-ad-surge.txt,🛑 全球拦截
+  - PROCESS-NAME,v2ray,🎯 全球直连
+  - PROCESS-NAME,xray,🎯 全球直连
+  - PROCESS-NAME,naive,🎯 全球直连
+  - PROCESS-NAME,trojan,🎯 全球直连
+  - PROCESS-NAME,trojan-go,🎯 全球直连
+  - PROCESS-NAME,ss-local,🎯 全球直连
+  - PROCESS-NAME,privoxy,🎯 全球直连
+  - PROCESS-NAME,leaf,🎯 全球直连
+  - PROCESS-NAME,v2ray.exe,🎯 全球直连
+  - PROCESS-NAME,xray.exe,🎯 全球直连
+  - PROCESS-NAME,naive.exe,🎯 全球直连
+  - PROCESS-NAME,trojan.exe,🎯 全球直连
+  - PROCESS-NAME,trojan-go.exe,🎯 全球直连
+  - PROCESS-NAME,ss-local.exe,🎯 全球直连
+  - PROCESS-NAME,privoxy.exe,🎯 全球直连
+  - PROCESS-NAME,leaf.exe,🎯 全球直连
+  - PROCESS-NAME,Surge,🎯 全球直连
+  - PROCESS-NAME,Surge 2,🎯 全球直连
+  - PROCESS-NAME,Surge 3,🎯 全球直连
+  - PROCESS-NAME,Surge 4,🎯 全球直连
+  - PROCESS-NAME,Surge%202,🎯 全球直连
+  - PROCESS-NAME,Surge%203,🎯 全球直连
+  - PROCESS-NAME,Surge%204,🎯 全球直连
+  - PROCESS-NAME,Thunder,🎯 全球直连
+  - PROCESS-NAME,DownloadService,🎯 全球直连
+  - PROCESS-NAME,qBittorrent,🎯 全球直连
+  - PROCESS-NAME,Transmission,🎯 全球直连
+  - PROCESS-NAME,fdm,🎯 全球直连
+  - PROCESS-NAME,aria2c,🎯 全球直连
+  - PROCESS-NAME,Folx,🎯 全球直连
+  - PROCESS-NAME,NetTransport,🎯 全球直连
+  - PROCESS-NAME,uTorrent,🎯 全球直连
+  - PROCESS-NAME,WebTorrent,🎯 全球直连
+  - PROCESS-NAME,aria2c.exe,🎯 全球直连
+  - PROCESS-NAME,BitComet.exe,🎯 全球直连
+  - PROCESS-NAME,fdm.exe,🎯 全球直连
+  - PROCESS-NAME,NetTransport.exe,🎯 全球直连
+  - PROCESS-NAME,qbittorrent.exe,🎯 全球直连
+  - PROCESS-NAME,Thunder.exe,🎯 全球直连
+  - PROCESS-NAME,ThunderVIP.exe,🎯 全球直连
+  - PROCESS-NAME,transmission-daemon.exe,🎯 全球直连
+  - PROCESS-NAME,transmission-qt.exe,🎯 全球直连
+  - PROCESS-NAME,uTorrent.exe,🎯 全球直连
+  - PROCESS-NAME,WebTorrent.exe,🎯 全球直连
+  - DOMAIN,steamstore-a.akamaihd.net,🎯 全球直连
+  - DOMAIN,steamcdn-a.akamaihd.net,🎯 全球直连
+  - DOMAIN,api.steampowered.com,🎯 全球直连
+  - DOMAIN,store.steampowered.com,🎯 全球直连
+  - DOMAIN,clash.razord.top,🎯 全球直连
+  - DOMAIN,yacd.haishan.me,🎯 全球直连
+  
+  - DOMAIN,www.biqugeu.net,🌍 国外加速
+  - DOMAIN,www.cool18.com,🌍 国外加速
+  - DOMAIN-KEYWORD,diyibanzhu,🌍 国外加速
+  - DOMAIN-SUFFIX,cool18.com,🌍 国外加速
+  - DOMAIN-KEYWORD,cunhua,🌍 国外加速
+  
 
-RULE-SET,https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list,🌍 国外加速
-RULE-SET,https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list,🎯 全球直连
-RULE-SET,https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list,🎯 全球直连
-RULE-SET,https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list,Ⓜ️ 微软服务
+  - RULE-SET,自定义广告白名单,🎯 全球直连
+  - RULE-SET,自定义广告拦截,🛑 全球拦截
+  - RULE-SET,adblock,🛑 全球拦截
+  - IP-CIDR,0.0.0.0/32,🛑 全球拦截
 
-# RULE-SET,https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list,🍎 苹果服务
+  - RULE-SET,MetaCubeX-cn-domain,🎯 全球直连
 
-RULE-SET,https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list,📲 电报信息
-RULE-SET,https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list,🌍 国外加速
-RULE-SET,https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/ProxyLite.list,🌍 国外加速
-RULE-SET,https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list,🎯 全球直连
-RULE-SET,https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list,🎯 全球直连
+  #GEOIP规则
+  - GEOIP,private,🎯 全球直连,no-resolve
+  # - GEOIP,telegram,📲 电报信息
+  - GEOIP,JP,🌍 国外加速
+  - GEOIP,CN,🎯 全球直连
+#  - DST-PORT,80/8080/443/8443,🌍 国外加速
 
-GEOIP,CN,🎯 全球直连
+  - RULE-SET,ChinaCompanyIp,🎯 全球直连
+  - RULE-SET,ChinaDomain,🎯 全球直连
+  - RULE-SET,ChinaMedia,🎯 全球直连
+  - RULE-SET,ChinaIp,🎯 全球直连
+  - RULE-SET,LocalAreaNetwork,🎯 全球直连
+
+  - DOMAIN-SUFFIX,cn,🎯 全球直连
+  - DOMAIN-KEYWORD,-cn,🎯 全球直连
+  - RULE-SET,region,🌍 国外加速
+  - RULE-SET,direct,🎯 全球直连
+  - RULE-SET,direct2,🎯 全球直连
+  - RULE-SET,ProxyGFWlist,🌍 国外加速
+  - RULE-SET,telegramcidr,📲 电报信息
+  - GEOIP,CN,🎯 全球直连
+  - RULE-SET,proxy,🌍 国外加速
