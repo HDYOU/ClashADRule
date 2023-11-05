@@ -1,532 +1,534 @@
-payload:
-- DOMAIN-KEYWORD,hl.snssdk.com
-- DOMAIN-KEYWORD,lf.snssdk.com
+DOMAIN-SUFFIX,sdk.e.qq.com
+DOMAIN-SUFFIX,p3-webcast-sign.douyinpic.com
+DOMAIN-SUFFIX,adash.man.aliyuncs.com
+DOMAIN-SUFFIX,p3-webcast.douyinpic.com
+DOMAIN-SUFFIX,skdisplay.jd.com
+DOMAIN-SUFFIX,pglstatp-toutiao.com
+DOMAIN-SUFFIX,p3-sign.douyinpic.com
+DOMAIN-SUFFIX,api.toutiaoapi.com
+DOMAIN-SUFFIX,webcast5-open-lq.douyin.com
+DOMAIN-SUFFIX,lf3-webcastcdn-tos-sign.douyinstatic.com
+DOMAIN-SUFFIX,p26.douyinpic.com
+DOMAIN-SUFFIX,pull-flv-f13.douyincdn.com
+DOMAIN-SUFFIX,wxsnsdythumb.wxs.qq.com
+DOMAIN-SUFFIX,wxsnsdy.wxs.qq.com
+DOMAIN-SUFFIX,mp.weixin.qq.com
+DOMAIN-KEYWORD,zijie.
+DOMAIN-KEYWORD,pangolin
+DOMAIN-KEYWORD,pangolin-sdk-toutiao
+DOMAIN-KEYWORD,mgsdk-sign
+DOMAIN-KEYWORD,pangolin-sdk
+DOMAIN-SUFFIX,adsoptimal.com
+DOMAIN-SUFFIX,adasiatagmanager.appspot.com
+DOMAIN-KEYWORD,adsrv.lua.pl
+DOMAIN-KEYWORD,ads.tnt.tv
+DOMAIN-SUFFIX,adserver.lostreality.com
+DOMAIN-SUFFIX,adsessionserv.com
+DOMAIN-SUFFIX,adstage-analytics.herokuapp.com
+DOMAIN-SUFFIX,ads-c-1854119718.us-west-1.elb.amazonaws.com
+DOMAIN-SUFFIX,ads-privacy-api.prd.mz.internal.unity3d.com
+DOMAIN-KEYWORD,ads.superawesome.tv
+DOMAIN-SUFFIX,p1-lm.adkwai.com
+DOMAIN-SUFFIX,xlog.jd.com
+DOMAIN-SUFFIX,dsp-x.jd.com
+DOMAIN-SUFFIX,open.e.kuaishou.com
+DOMAIN-SUFFIX,richmedia.video.qq.com
+DOMAIN-SUFFIX,a.video.qq.com
+DOMAIN-SUFFIX,appcfg.v.qq.com
+DOMAIN-SUFFIX,vv.video.qq.com
+DOMAIN-SUFFIX,webcast-open.douyin.com
+DOMAIN-SUFFIX,w1.kskwai.com
+DOMAIN-SUFFIX,p1-lm.adukwai.com
+DOMAIN-SUFFIX,apd-pcdnwxstat.teg.tencent-cloud.net
+DOMAIN-SUFFIX,apd-pcdnvodstat.teg.tencent-cloud.net
+DOMAIN-SUFFIX,apd-vodp2plogin.teg.tencent-cloud.net
+DOMAIN-SUFFIX,gd.xinhuanet.com
+DOMAIN-SUFFIX,ad7.com
+DOMAIN-SUFFIX,nequal.com
+DOMAIN-SUFFIX,n1q.cn
+DOMAIN-SUFFIX,nequal.cn
+DOMAIN-SUFFIX,chance-ad.com
+DOMAIN-SUFFIX,zhihuiyun.net.cn
+DOMAIN-SUFFIX,71360.com
+DOMAIN-SUFFIX,reyun.com
+DOMAIN-KEYWORD,onemob.mobi
+DOMAIN-SUFFIX,emar.com
+DOMAIN-SUFFIX,gozendata.com
+DOMAIN-SUFFIX,gzads.com
+DOMAIN-SUFFIX,gz-data.com
+DOMAIN-SUFFIX,dwz.cn
+DOMAIN-SUFFIX,www.estrongs.com
+DOMAIN-SUFFIX,social.pinduoduo.com
+DOMAIN-SUFFIX,4pn.cn
+DOMAIN-SUFFIX,4a9.cn
+DOMAIN-SUFFIX,3p4.cn
+DOMAIN-SUFFIX,y4n.cn
+DOMAIN-SUFFIX,u7x.cn
+DOMAIN-SUFFIX,metrics.icloud.com
+DOMAIN-SUFFIX,aqdlt.com
+DOMAIN-SUFFIX,aqdz91.com
+DOMAIN-SUFFIX,aqdz149.com
+DOMAIN-SUFFIX,appmetrica.yandex.ru
+DOMAIN-SUFFIX,share.jileme.net
+DOMAIN-KEYWORD,byteorge.
+DOMAIN-KEYWORD,bytegoofy.
+DOMAIN-KEYWORD,bytedance.
+DOMAIN-KEYWORD,lf.fqnovel.
+DOMAIN-KEYWORD,ad-sign.
+DOMAIN-KEYWORD,mgsdk-sign.
+DOMAIN-KEYWORD,dig.bdurl.net
+DOMAIN-SUFFIX,activity-ag.awemeughun.com
+DOMAIN-SUFFIX,msync-im1-vip6-std.easemob.com
+DOMAIN-SUFFIX,apd-pcdnwxlogin.teg.tencent-cloud.net
+DOMAIN-SUFFIX,sf3-ttcdn-tos.pstatp.com
+DOMAIN-SUFFIX,settings.ttwebview.com
+DOMAIN-SUFFIX,ctobsnssdk.com
+DOMAIN-SUFFIX,pangolin.snssdk.com
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com
+DOMAIN-SUFFIX,pangolin-sdk.com
+DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com
+DOMAIN-SUFFIX,pglstatp-sdk-toutiao.com
+DOMAIN-SUFFIX,pglstatp-snssdk-toutiao.com
+DOMAIN-SUFFIX,pglstatp-snssdk.com
+DOMAIN-SUFFIX,mi.gdt.qq.com
+DOMAIN-SUFFIX,win.gdt.qq.com
+DOMAIN-SUFFIX,webcast5-open-lf.douyin.com
+DOMAIN-SUFFIX,open.kwaizt.com
+DOMAIN-SUFFIX,toblog.ctobsnssdk.com
+DOMAIN-SUFFIX,sdk-ab-config.aiclk.com
+DOMAIN-SUFFIX,sdkoptedge.chinanetcenter.com
+DOMAIN-SUFFIX,mssdk.volces.com
+DOMAIN-SUFFIX,jietuhb.com
+DOMAIN-SUFFIX,adukwai.com
+DOMAIN-SUFFIX,mobads.baidu.com
+DOMAIN-SUFFIX,sdk-log.partner.sm.cn
+DOMAIN-SUFFIX,t-remad.qm989.com
+DOMAIN-SUFFIX,tobapplog.ctobsnssdk.com
+DOMAIN-SUFFIX,kuaishouzt.com
+DOMAIN-SUFFIX,qm-data.wtzw.com
+DOMAIN-SUFFIX,hmma.baidu.com
+DOMAIN-SUFFIX,a6-remad.qm989.com
+DOMAIN-SUFFIX,api-sc.wtzw.com
+DOMAIN-SUFFIX,httpdns.bcelive.com
+DOMAIN-SUFFIX,otheve.beacon.qq.com
+DOMAIN-SUFFIX,gdtimg.com
+DOMAIN-SUFFIX,cmpassport.com
+DOMAIN-SUFFIX,hc-ssp.sm.cn
+DOMAIN-SUFFIX,logrcv.aiclk.com
+DOMAIN-SUFFIX,open.e.kuaishou.cn
 
-- DOMAIN-SUFFIX,vcs.zijieapi.com
-- DOMAIN-SUFFIX,sdk.e.qq.com
-- DOMAIN-SUFFIX,p3-webcast-sign.douyinpic.com
-- DOMAIN-SUFFIX,adash.man.aliyuncs.com
-- DOMAIN-SUFFIX,p3-webcast.douyinpic.com
-- DOMAIN-SUFFIX,skdisplay.jd.com
-- DOMAIN-SUFFIX,pglstatp-toutiao.com
-- DOMAIN-SUFFIX,p3-sign.douyinpic.com
-- DOMAIN-SUFFIX,api.toutiaoapi.com
-- DOMAIN-SUFFIX,webcast5-open-lq.douyin.com
-- DOMAIN-SUFFIX,lf3-webcastcdn-tos-sign.douyinstatic.com
-- DOMAIN-SUFFIX,p26.douyinpic.com
-- DOMAIN-SUFFIX,pull-flv-f13.douyincdn.com
-- DOMAIN-SUFFIX,wxsnsdythumb.wxs.qq.com
-- DOMAIN-SUFFIX,wxsnsdy.wxs.qq.com
-- DOMAIN-SUFFIX,mp.weixin.qq.com
-#- DOMAIN-KEYWORD,zijie.
-- DOMAIN-KEYWORD,pangolin
-- DOMAIN-KEYWORD,pangolin-sdk-toutiao
-- DOMAIN-KEYWORD,mgsdk-sign
-- DOMAIN-KEYWORD,pangolin-sdk
-- DOMAIN-SUFFIX,adsoptimal.com
-- DOMAIN-SUFFIX,adasiatagmanager.appspot.com
-- DOMAIN-KEYWORD,adsrv.lua.pl
-- DOMAIN-KEYWORD,ads.tnt.tv
-- DOMAIN-SUFFIX,adserver.lostreality.com
-- DOMAIN-SUFFIX,adsessionserv.com
-- DOMAIN-SUFFIX,adstage-analytics.herokuapp.com
-- DOMAIN-SUFFIX,ads-c-1854119718.us-west-1.elb.amazonaws.com
-- DOMAIN-SUFFIX,ads-privacy-api.prd.mz.internal.unity3d.com
-- DOMAIN-KEYWORD,ads.superawesome.tv
-- DOMAIN-SUFFIX,p1-lm.adkwai.com
-- DOMAIN-SUFFIX,xlog.jd.com
-- DOMAIN-SUFFIX,dsp-x.jd.com
-- DOMAIN-SUFFIX,open.e.kuaishou.com
-- DOMAIN-SUFFIX,richmedia.video.qq.com
-- DOMAIN-SUFFIX,a.video.qq.com
-- DOMAIN-SUFFIX,appcfg.v.qq.com
-- DOMAIN-SUFFIX,vv.video.qq.com
-- DOMAIN-SUFFIX,webcast-open.douyin.com
-- DOMAIN-SUFFIX,w1.kskwai.com
-- DOMAIN-SUFFIX,p1-lm.adukwai.com
-- DOMAIN-SUFFIX,apd-pcdnwxstat.teg.tencent-cloud.net
-- DOMAIN-SUFFIX,apd-pcdnvodstat.teg.tencent-cloud.net
-- DOMAIN-SUFFIX,apd-vodp2plogin.teg.tencent-cloud.net
-- DOMAIN-SUFFIX,gd.xinhuanet.com
-- DOMAIN-SUFFIX,ad7.com
-- DOMAIN-SUFFIX,nequal.com
-- DOMAIN-SUFFIX,n1q.cn
-- DOMAIN-SUFFIX,nequal.cn
-- DOMAIN-SUFFIX,chance-ad.com
-- DOMAIN-SUFFIX,zhihuiyun.net.cn
-- DOMAIN-SUFFIX,71360.com
-- DOMAIN-SUFFIX,reyun.com
-- DOMAIN-KEYWORD,onemob.mobi
-- DOMAIN-SUFFIX,emar.com
-- DOMAIN-SUFFIX,gozendata.com
-- DOMAIN-SUFFIX,gzads.com
-- DOMAIN-SUFFIX,gz-data.com
-- DOMAIN-SUFFIX,dwz.cn
-- DOMAIN-SUFFIX,www.estrongs.com
-- DOMAIN-SUFFIX,social.pinduoduo.com
-- DOMAIN-SUFFIX,4pn.cn
-- DOMAIN-SUFFIX,4a9.cn
-- DOMAIN-SUFFIX,3p4.cn
-- DOMAIN-SUFFIX,y4n.cn
-- DOMAIN-SUFFIX,u7x.cn
-- DOMAIN-SUFFIX,metrics.icloud.com
-- DOMAIN-SUFFIX,aqdlt.com
-- DOMAIN-SUFFIX,aqdz91.com
-- DOMAIN-SUFFIX,aqdz149.com
-- DOMAIN-SUFFIX,appmetrica.yandex.ru
-- DOMAIN-SUFFIX,share.jileme.net
-- DOMAIN-KEYWORD,byteorge.
-- DOMAIN-KEYWORD,bytegoofy.
-- DOMAIN-KEYWORD,bytedance.
-- DOMAIN-KEYWORD,lf.fqnovel.
-- DOMAIN-KEYWORD,ad-sign.
-- DOMAIN-KEYWORD,mgsdk-sign.
-- DOMAIN-KEYWORD,dig.bdurl.net
-- DOMAIN-SUFFIX,activity-ag.awemeughun.com
-- DOMAIN-SUFFIX,msync-im1-vip6-std.easemob.com
-- DOMAIN-SUFFIX,apd-pcdnwxlogin.teg.tencent-cloud.net
-- DOMAIN-SUFFIX,sf3-ttcdn-tos.pstatp.com
-- DOMAIN-SUFFIX,settings.ttwebview.com
-- DOMAIN-SUFFIX,ctobsnssdk.com
-- DOMAIN-SUFFIX,pangolin.snssdk.com
-- DOMAIN-SUFFIX,pangolin-sdk-toutiao.com
-- DOMAIN-SUFFIX,pangolin-sdk.com
-- DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com
-- DOMAIN-SUFFIX,pglstatp-sdk-toutiao.com
-- DOMAIN-SUFFIX,pglstatp-snssdk-toutiao.com
-- DOMAIN-SUFFIX,pglstatp-snssdk.com
-- DOMAIN-SUFFIX,mi.gdt.qq.com
-- DOMAIN-SUFFIX,win.gdt.qq.com
-- DOMAIN-SUFFIX,webcast5-open-lf.douyin.com
-- DOMAIN-SUFFIX,open.kwaizt.com
-- DOMAIN-SUFFIX,toblog.ctobsnssdk.com
-- DOMAIN-SUFFIX,sdk-ab-config.aiclk.com
-- DOMAIN-SUFFIX,sdkoptedge.chinanetcenter.com
-- DOMAIN-SUFFIX,mssdk.volces.com
-- DOMAIN-SUFFIX,jietuhb.com
-- DOMAIN-SUFFIX,adukwai.com
-- DOMAIN-SUFFIX,mobads.baidu.com
-- DOMAIN-SUFFIX,sdk-log.partner.sm.cn
-- DOMAIN-SUFFIX,t-remad.qm989.com
-- DOMAIN-SUFFIX,tobapplog.ctobsnssdk.com
-- DOMAIN-SUFFIX,kuaishouzt.com
-- DOMAIN-SUFFIX,qm-data.wtzw.com
-- DOMAIN-SUFFIX,hmma.baidu.com
-- DOMAIN-SUFFIX,a6-remad.qm989.com
-- DOMAIN-SUFFIX,api-sc.wtzw.com
-- DOMAIN-SUFFIX,httpdns.bcelive.com
-- DOMAIN-SUFFIX,otheve.beacon.qq.com
-- DOMAIN-SUFFIX,gdtimg.com
-- DOMAIN-SUFFIX,cmpassport.com
-- DOMAIN-SUFFIX,hc-ssp.sm.cn
-- DOMAIN-SUFFIX,logrcv.aiclk.com
-- DOMAIN-SUFFIX,open.e.kuaishou.cn
-- DOMAIN-SUFFIX,alicdn.com
-- DOMAIN-SUFFIX,apmplus.volces.com
-- DOMAIN-SUFFIX,ulogs.umeng.com
-- DOMAIN-SUFFIX,api-gw.wtzw.com
+DOMAIN-SUFFIX,apmplus.volces.com
+DOMAIN-SUFFIX,ulogs.umeng.com
+DOMAIN-SUFFIX,api-gw.wtzw.com
 #DOMAIN-SUFFIX,pinduoduo.com
-- DOMAIN-SUFFIX,rpt.gdt.qq.com
-- DOMAIN-SUFFIX,acs.m.taobao.com
-- DOMAIN-SUFFIX,pangolin-sdk-toutiao1.com
-- DOMAIN-SUFFIX,iyes.youku.com
-- DOMAIN-SUFFIX,huichuan.sm.cn
-- DOMAIN-SUFFIX,wcp.taobao.com
-- DOMAIN-SUFFIX,janapi.jd.com
-- DOMAIN-SUFFIX,mos.m.taobao.com
-- DOMAIN-SUFFIX,h-adashx.ut.taobao.com
-- DOMAIN-SUFFIX,fapi.xdrun.com
-- DOMAIN-SUFFIX,download.alicdn.com
-- DOMAIN-SUFFIX,alpha.alicdn.com
-- DOMAIN-SUFFIX,opehs.tanx.com
-- DOMAIN-SUFFIX,audid-api.taobao.com
-- DOMAIN-SUFFIX,stars.shuqireader.com
-- DOMAIN-SUFFIX,partner.uc.cn
-- DOMAIN-SUFFIX,audio-cdn.shuqireader.com
-- DOMAIN-SUFFIX,thirdwx.qlogo.cn
-- DOMAIN-SUFFIX,g.alicdn.com
-- DOMAIN-SUFFIX,arms-retcode.aliyuncs.com
-- DOMAIN-SUFFIX,px.effirst.com
-- DOMAIN-SUFFIX,contentcenter-drcn.dbankcdn.cn
-- DOMAIN-SUFFIX,lf-cdn-tos.bytescm.com
-- DOMAIN-SUFFIX,oss-asq-download.11222.cn
-- DOMAIN-SUFFIX,log.umsns.com
-- DOMAIN-SUFFIX,render-resource.11222.cn
-- DOMAIN-SUFFIX,puds.ucweb.com
-- DOMAIN-SUFFIX,ads.video.qq.com
-- DOMAIN-SUFFIX,multi-az-ad.kuaishou.cn
-- DOMAIN-SUFFIX,p3.adkwai.com
-- DOMAIN-SUFFIX,pangolin-dsp-toutiao.com
-- DOMAIN-SUFFIX,pangolin16.sgsnssdk.com
-- DOMAIN-SUFFIX,ad.qun.qq.com
-- DOMAIN-SUFFIX,adping.qq.com
-- DOMAIN-SUFFIX,adrdir.qq.com
-- DOMAIN-SUFFIX,adsfile.qq.com
-- DOMAIN-SUFFIX,adsgroup.qq.com
-- DOMAIN-SUFFIX,adshmct.qq.com
-- DOMAIN-SUFFIX,adshmmsg.qq.com
-- DOMAIN-SUFFIX,adslvfile.qq.com
-- DOMAIN-SUFFIX,adslvseed.qq.com
-- DOMAIN-SUFFIX,adstextview.qq.com
-- DOMAIN-SUFFIX,adsview.qq.com
-- DOMAIN-SUFFIX,adsview2.qq.com
-- DOMAIN-SUFFIX,adv.app.qq.com
-- DOMAIN-SUFFIX,adver.qq.com
-- DOMAIN-SUFFIX,adfilter.imtt.qq.com
-- DOMAIN-SUFFIX,adpm.app.qq.com
-- DOMAIN-SUFFIX,ad.qq.com
-- DOMAIN-SUFFIX,adsense.html5.qq.com
-- DOMAIN-SUFFIX,adsolution.imtt.qq.com
-- DOMAIN-SUFFIX,adsrich.qq.com
-- DOMAIN-SUFFIX,d3g.qq.com
-- DOMAIN-SUFFIX,jqmt.qq.com
-- DOMAIN-SUFFIX,jsqmt.qq.com
-- DOMAIN-SUFFIX,ta.qq.com
-- DOMAIN-SUFFIX,p.tencentmind.com
-- DOMAIN-SUFFIX,e.qq.com
-- DOMAIN-SUFFIX,cm.e.qq.com
-- DOMAIN-SUFFIX,p.l.qq.com
-- DOMAIN-SUFFIX,dp3.qq.com
-- DOMAIN-SUFFIX,us.l.qq.com
-- DOMAIN-SUFFIX,android.rqd.qq.com
-- DOMAIN-SUFFIX,android.bugly.qq.com
-- DOMAIN-SUFFIX,api.poll.aiseet.atianqi.com
-- DOMAIN-SUFFIX,btrace.qq.com
-- DOMAIN-SUFFIX,tools.3g.qq.com
-- DOMAIN-SUFFIX,oth.str.mdt.qq.com
-- DOMAIN-SUFFIX,oth.eve.mdt.qq.com
-- DOMAIN-SUFFIX,mtrace.qq.com
-- DOMAIN-SUFFIX,misc.wcd.qq.com
-- DOMAIN-SUFFIX,raddus.bayescom.com
-- DOMAIN-SUFFIX,mtt.eve.mdt.qq.com
-- DOMAIN-SUFFIX,push.pgl.qq.com
-- DOMAIN-SUFFIX,rmpad.imtt.qq.com
-- DOMAIN-SUFFIX,tangram.e.qq.com
-- DOMAIN-SUFFIX,mig.str.mdt.qq.com
-- DOMAIN-SUFFIX,pms.mb.qq.com
-- DOMAIN-SUFFIX,adsmind.apdcdn.tc.qq.com
-- DOMAIN-SUFFIX,p.store.qq.com
-- DOMAIN-SUFFIX,masdk.3g.qq.com
-- DOMAIN-SUFFIX,ten.sngapm.qq.com
-- DOMAIN-SUFFIX,ads.privacy.qq.com
-- DOMAIN-SUFFIX,tdid.m.qq.com
-- DOMAIN-SUFFIX,h.trace.qq.com
-- DOMAIN-SUFFIX,mtt.str.mdt.qq.com
-- DOMAIN-SUFFIX,tmeadcomm.y.qq.com
-- DOMAIN-SUFFIX,qzs.gdtimg.com
-- DOMAIN-SUFFIX,public.gdtimg.com
-- DOMAIN-SUFFIX,cmshow.gtimg.cn
-- DOMAIN-SUFFIX,qappcenterv6.3g.qq.com
-- DOMAIN-SUFFIX,aeventlog.beacon.qq.com
-- DOMAIN-SUFFIX,cc.map.qq.com
-- DOMAIN-SUFFIX,aegis.qq.com
-- DOMAIN-SUFFIX,cdn-ads.oss-cn-shanghai.aliyuncs.com
-- DOMAIN-SUFFIX,ynuf.aliapp.org
-- DOMAIN-SUFFIX,unidesk.alicdn.com
-- DOMAIN-SUFFIX,nbsdk-baichuan.alicdn.com
-- DOMAIN-SUFFIX,baichuan-sdk.alicdn.com
-- DOMAIN-SUFFIX,ilce.alicdn.com
-- DOMAIN-SUFFIX,abtest.alibaba.com
-- DOMAIN-SUFFIX,proxy-mob-cld.alicdn.com
-- DOMAIN-SUFFIX,uyunad.com
-- DOMAIN-SUFFIX,ali-ad.a.yximgs.com
-- DOMAIN-SUFFIX,adashbc.m.taobao.com
-- DOMAIN-SUFFIX,adashbc.ut.taobao.com
-- DOMAIN-SUFFIX,adashxgc.ut.taobao.com
-- DOMAIN-SUFFIX,adashx.m.taobao.com
-- DOMAIN-SUFFIX,c-adash.m.taobao.com
-- DOMAIN-SUFFIX,m-adash.m.taobao.com
-- DOMAIN-SUFFIX,adash.m.taobao.com
-- DOMAIN-SUFFIX,tunion-api.m.taobao.com
-- DOMAIN-SUFFIX,acs4baichuan.m.taobao.com
-- DOMAIN-SUFFIX,amdc.m.taobao.com
-- DOMAIN-SUFFIX,amdcopen.m.taobao.com
-- DOMAIN-SUFFIX,eco.taobao.com
-- DOMAIN-SUFFIX,umengacs.m.taobao.com
-- DOMAIN-SUFFIX,umengjmacs.m.taobao.com
-- DOMAIN-SUFFIX,openjmacs.m.taobao.com
-- DOMAIN-SUFFIX,dsp.simba.taobao.com
-- DOMAIN-SUFFIX,sjarvis.taobao.com
-- DOMAIN-SUFFIX,adashx4yt.m.taobao.com
-- DOMAIN-SUFFIX,h-adashx4yt.ut.taobao.com
-- DOMAIN-SUFFIX,umdc.aliapp.org
-- DOMAIN-SUFFIX,sdk.beizi.biz
-- DOMAIN-SUFFIX,cfg.imtt.qq.com
-- DOMAIN-SUFFIX,sdktmp.hubcloud.com.cn
-- DOMAIN-SUFFIX,kde.qq.com
-- DOMAIN-SUFFIX,report.nfa.qq.com
-- DOMAIN-SUFFIX,sdkapiv2.bizport.cn
+DOMAIN-SUFFIX,rpt.gdt.qq.com
+DOMAIN-SUFFIX,acs.m.taobao.com
+DOMAIN-SUFFIX,pangolin-sdk-toutiao1.com
+DOMAIN-SUFFIX,iyes.youku.com
+DOMAIN-SUFFIX,huichuan.sm.cn
+DOMAIN-SUFFIX,wcp.taobao.com
+DOMAIN-SUFFIX,janapi.jd.com
+DOMAIN-SUFFIX,mos.m.taobao.com
+DOMAIN-SUFFIX,h-adashx.ut.taobao.com
+DOMAIN-SUFFIX,fapi.xdrun.com
 
-# 广告关键词匹配
-#- DOMAIN-KEYWORD,log.  #误拦截 blog
-- DOMAIN-KEYWORD,ulog.
-- DOMAIN-KEYWORD,xlog.
-#- DOMAIN-KEYWORD,ads.
-- DOMAIN-KEYWORD,report.
-#- DOMAIN-KEYWORD,ad.
-- DOMAIN-KEYWORD,umeng
-- DOMAIN-KEYWORD,abtest.
-- IP-CIDR,0.0.0.0/32
 
-- DOMAIN-KEYWORD,rtlog
-- DOMAIN-KEYWORD,applog
-- DOMAIN-SUFFIX,reading-hl.snssdk.com
-- DOMAIN-SUFFIX,is-hl.snssdk.com
-- DOMAIN-SUFFIX,ichannel.snssdk.com
-- DOMAIN-SUFFIX,cgicol.amap.com
-- DOMAIN-SUFFIX,tnc3-bjlgy.snssdk.com
-- DOMAIN-SUFFIX,is.snssdk.com
-- DOMAIN-KEYWORD,toutiao-hl.fqnovel.com
-- DOMAIN-KEYWORD,misc-hl.fqnovel.com
-- DOMAIN-SUFFIX,polaris3-normal-hl.zijieapi.com
-- DOMAIN-SUFFIX,polaris5-normal-hl.zijieapi.com
-- DOMAIN-SUFFIX,saveu3-normal-hl.zijieapi.com
-- DOMAIN-SUFFIX,saveu5-normal-hl.zijieapi.com
+#  alicdn.com
+#DOMAIN-SUFFIX,alicdn.com
+#DOMAIN-SUFFIX,download.alicdn.com
+#DOMAIN-SUFFIX,alpha.alicdn.com
+#DOMAIN-SUFFIX,unidesk.alicdn.com
+#DOMAIN-SUFFIX,nbsdk-baichuan.alicdn.com
+#DOMAIN-SUFFIX,baichuan-sdk.alicdn.com
+#DOMAIN-SUFFIX,ilce.alicdn.com
+#DOMAIN-SUFFIX,g.alicdn.com
+#DOMAIN-SUFFIX,proxy-mob-cld.alicdn.com
 
-- DOMAIN-SUFFIX,feedback-c.zijieapi.com
-- DOMAIN-SUFFIX,ecombdapi.com
-- DOMAIN-SUFFIX,mpush-api.aliyun.com
 
-- DOMAIN-KEYWORD,fake-domain
-- IP-CIDR,106.11.61.137/24
+DOMAIN-SUFFIX,opehs.tanx.com
+DOMAIN-SUFFIX,audid-api.taobao.com
+DOMAIN-SUFFIX,stars.shuqireader.com
+DOMAIN-SUFFIX,partner.uc.cn
+DOMAIN-SUFFIX,audio-cdn.shuqireader.com
+DOMAIN-SUFFIX,thirdwx.qlogo.cn
+
+DOMAIN-SUFFIX,arms-retcode.aliyuncs.com
+DOMAIN-SUFFIX,px.effirst.com
+DOMAIN-SUFFIX,contentcenter-drcn.dbankcdn.cn
+DOMAIN-SUFFIX,lf-cdn-tos.bytescm.com
+DOMAIN-SUFFIX,oss-asq-download.11222.cn
+DOMAIN-SUFFIX,log.umsns.com
+DOMAIN-SUFFIX,render-resource.11222.cn
+DOMAIN-SUFFIX,puds.ucweb.com
+DOMAIN-SUFFIX,ads.video.qq.com
+DOMAIN-SUFFIX,multi-az-ad.kuaishou.cn
+DOMAIN-SUFFIX,p3.adkwai.com
+DOMAIN-SUFFIX,pangolin-dsp-toutiao.com
+DOMAIN-SUFFIX,pangolin16.sgsnssdk.com
+DOMAIN-SUFFIX,ad.qun.qq.com
+DOMAIN-SUFFIX,adping.qq.com
+DOMAIN-SUFFIX,adrdir.qq.com
+DOMAIN-SUFFIX,adsfile.qq.com
+DOMAIN-SUFFIX,adsgroup.qq.com
+DOMAIN-SUFFIX,adshmct.qq.com
+DOMAIN-SUFFIX,adshmmsg.qq.com
+DOMAIN-SUFFIX,adslvfile.qq.com
+DOMAIN-SUFFIX,adslvseed.qq.com
+DOMAIN-SUFFIX,adstextview.qq.com
+DOMAIN-SUFFIX,adsview.qq.com
+DOMAIN-SUFFIX,adsview2.qq.com
+DOMAIN-SUFFIX,adv.app.qq.com
+DOMAIN-SUFFIX,adver.qq.com
+DOMAIN-SUFFIX,adfilter.imtt.qq.com
+DOMAIN-SUFFIX,adpm.app.qq.com
+DOMAIN-SUFFIX,ad.qq.com
+DOMAIN-SUFFIX,adsense.html5.qq.com
+DOMAIN-SUFFIX,adsolution.imtt.qq.com
+DOMAIN-SUFFIX,adsrich.qq.com
+DOMAIN-SUFFIX,d3g.qq.com
+DOMAIN-SUFFIX,jqmt.qq.com
+DOMAIN-SUFFIX,jsqmt.qq.com
+DOMAIN-SUFFIX,ta.qq.com
+DOMAIN-SUFFIX,p.tencentmind.com
+DOMAIN-SUFFIX,e.qq.com
+DOMAIN-SUFFIX,cm.e.qq.com
+DOMAIN-SUFFIX,p.l.qq.com
+DOMAIN-SUFFIX,dp3.qq.com
+DOMAIN-SUFFIX,us.l.qq.com
+DOMAIN-SUFFIX,android.rqd.qq.com
+DOMAIN-SUFFIX,android.bugly.qq.com
+DOMAIN-SUFFIX,api.poll.aiseet.atianqi.com
+DOMAIN-SUFFIX,btrace.qq.com
+DOMAIN-SUFFIX,tools.3g.qq.com
+DOMAIN-SUFFIX,oth.str.mdt.qq.com
+DOMAIN-SUFFIX,oth.eve.mdt.qq.com
+DOMAIN-SUFFIX,mtrace.qq.com
+DOMAIN-SUFFIX,misc.wcd.qq.com
+DOMAIN-SUFFIX,raddus.bayescom.com
+DOMAIN-SUFFIX,mtt.eve.mdt.qq.com
+DOMAIN-SUFFIX,push.pgl.qq.com
+DOMAIN-SUFFIX,rmpad.imtt.qq.com
+DOMAIN-SUFFIX,tangram.e.qq.com
+DOMAIN-SUFFIX,mig.str.mdt.qq.com
+DOMAIN-SUFFIX,pms.mb.qq.com
+DOMAIN-SUFFIX,adsmind.apdcdn.tc.qq.com
+DOMAIN-SUFFIX,p.store.qq.com
+DOMAIN-SUFFIX,masdk.3g.qq.com
+DOMAIN-SUFFIX,ten.sngapm.qq.com
+DOMAIN-SUFFIX,ads.privacy.qq.com
+DOMAIN-SUFFIX,tdid.m.qq.com
+DOMAIN-SUFFIX,h.trace.qq.com
+DOMAIN-SUFFIX,mtt.str.mdt.qq.com
+DOMAIN-SUFFIX,tmeadcomm.y.qq.com
+DOMAIN-SUFFIX,qzs.gdtimg.com
+DOMAIN-SUFFIX,public.gdtimg.com
+DOMAIN-SUFFIX,cmshow.gtimg.cn
+DOMAIN-SUFFIX,qappcenterv6.3g.qq.com
+DOMAIN-SUFFIX,aeventlog.beacon.qq.com
+DOMAIN-SUFFIX,cc.map.qq.com
+DOMAIN-SUFFIX,aegis.qq.com
+DOMAIN-SUFFIX,cdn-ads.oss-cn-shanghai.aliyuncs.com
+DOMAIN-SUFFIX,ynuf.aliapp.org
+
+DOMAIN-SUFFIX,abtest.alibaba.com
+
+DOMAIN-SUFFIX,uyunad.com
+DOMAIN-SUFFIX,ali-ad.a.yximgs.com
+DOMAIN-SUFFIX,adashbc.m.taobao.com
+DOMAIN-SUFFIX,adashbc.ut.taobao.com
+DOMAIN-SUFFIX,adashxgc.ut.taobao.com
+DOMAIN-SUFFIX,adashx.m.taobao.com
+DOMAIN-SUFFIX,c-adash.m.taobao.com
+DOMAIN-SUFFIX,m-adash.m.taobao.com
+DOMAIN-SUFFIX,adash.m.taobao.com
+DOMAIN-SUFFIX,tunion-api.m.taobao.com
+DOMAIN-SUFFIX,acs4baichuan.m.taobao.com
+DOMAIN-SUFFIX,amdc.m.taobao.com
+DOMAIN-SUFFIX,amdcopen.m.taobao.com
+DOMAIN-SUFFIX,eco.taobao.com
+DOMAIN-SUFFIX,umengacs.m.taobao.com
+DOMAIN-SUFFIX,umengjmacs.m.taobao.com
+DOMAIN-SUFFIX,openjmacs.m.taobao.com
+DOMAIN-SUFFIX,dsp.simba.taobao.com
+DOMAIN-SUFFIX,sjarvis.taobao.com
+DOMAIN-SUFFIX,adashx4yt.m.taobao.com
+DOMAIN-SUFFIX,h-adashx4yt.ut.taobao.com
+DOMAIN-SUFFIX,umdc.aliapp.org
+DOMAIN-SUFFIX,sdk.beizi.biz
+DOMAIN-SUFFIX,cfg.imtt.qq.com
+DOMAIN-SUFFIX,sdktmp.hubcloud.com.cn
+DOMAIN-SUFFIX,kde.qq.com
+DOMAIN-SUFFIX,report.nfa.qq.com
+DOMAIN-SUFFIX,sdkapiv2.bizport.cn
+DOMAIN-KEYWORD,log.
+DOMAIN-KEYWORD,ulog.
+DOMAIN-KEYWORD,xlog.
+#DOMAIN-KEYWORD,ads.
+DOMAIN-KEYWORD,report.
+#DOMAIN-KEYWORD,ad.
+DOMAIN-KEYWORD,umeng
+DOMAIN-KEYWORD,abtest.
+IP-CIDR,0.0.0.0/32
+
+DOMAIN-KEYWORD,rtlog
+DOMAIN-KEYWORD,applog
+DOMAIN-SUFFIX,reading-hl.snssdk.com
+DOMAIN-SUFFIX,is-hl.snssdk.com
+DOMAIN-SUFFIX,ichannel.snssdk.com
+DOMAIN-SUFFIX,cgicol.amap.com
+DOMAIN-SUFFIX,tnc3-bjlgy.snssdk.com
+DOMAIN-SUFFIX,is.snssdk.com
+DOMAIN-KEYWORD,toutiao-hl.fqnovel.com
+DOMAIN-KEYWORD,misc-hl.fqnovel.com
+DOMAIN-SUFFIX,polaris3-normal-hl.zijieapi.com
+DOMAIN-SUFFIX,polaris5-normal-hl.zijieapi.com
+DOMAIN-SUFFIX,saveu3-normal-hl.zijieapi.com
+DOMAIN-SUFFIX,saveu5-normal-hl.zijieapi.com
+
+DOMAIN-SUFFIX,feedback-c.zijieapi.com
+DOMAIN-SUFFIX,ecombdapi.com
+DOMAIN-SUFFIX,mpush-api.aliyun.com
+
+DOMAIN-KEYWORD,fake-domain
+IP-CIDR,106.11.61.137/24
 
 # 番茄图片
-- DOMAIN-KEYWORD,reading.douyin.com
-- DOMAIN-KEYWORD,sign.douyinpic.com
-#- DOMAIN-KEYWORD,-heycan-dy-sign.byteimg.com #评论区图片
-- DOMAIN-KEYWORD,analytics.
+DOMAIN-KEYWORD,reading.douyin.com
+DOMAIN-KEYWORD,sign.douyinpic.com
+DOMAIN-KEYWORD,-heycan-dy-sign.byteimg.com
 
-- DOMAIN-SUFFIX,tr.byteurl.cn
-
-- DOMAIN-KEYWORD,-normal-hl.zijieapi.com
-- DOMAIN-KEYWORD,-normal-lf.zijieapi.com
-
-
-- DOMAIN-SUFFIX,livewebbs2.msstatic.com
-- DOMAIN-SUFFIX,web3610.top
+DOMAIN-SUFFIX,livewebbs2.msstatic.com
+DOMAIN-SUFFIX,web3610.top
 
 # 番茄小说
-- DOMAIN-SUFFIX,ads3-normal-lf.zijieapi.com
-- DOMAIN-SUFFIX,ads5-normal-lf.zijieapi.com
-- DOMAIN-SUFFIX,ads3-normal-hl.zijieapi.com
-- DOMAIN-SUFFIX,ads5-normal-hl.zijieapi.com
-- DOMAIN-SUFFIX,polaris3-normal-lf.zijieapi.com
-- DOMAIN-SUFFIX,polaris5-normal-lf.zijieapi.com
-- DOMAIN-SUFFIX,gecko3-lf.zijieapi.com
-- DOMAIN-SUFFIX,gecko5-lf.zijieapi.com
-- DOMAIN-SUFFIX,mssdk3-normal-lf.zijieapi.com
-- DOMAIN-SUFFIX,mssdk5-normal-lf.zijieapi.com
-- DOMAIN-SUFFIX,log3-applog-lf.zijieapi.com
-- DOMAIN-SUFFIX,log5-applog-lf.zijieapi.com
-- DOMAIN-SUFFIX,rtlog3-applog-lf.zijieapi.com
-- DOMAIN-SUFFIX,rtlog5-applog-lf.zijieapi.com
-- DOMAIN-SUFFIX,log3-applog-lf.fqnovel.com
-- DOMAIN-SUFFIX,log5-applog-lf.fqnovel.com
-- DOMAIN-SUFFIX,rtlog3-applog-lf.fqnovel.com
-- DOMAIN-SUFFIX,rtlog5-applog-lf.fqnovel.com
+DOMAIN-SUFFIX,ads3-normal-lf.zijieapi.com
+DOMAIN-SUFFIX,ads5-normal-lf.zijieapi.com
+DOMAIN-SUFFIX,ads3-normal-hl.zijieapi.com
+DOMAIN-SUFFIX,ads5-normal-hl.zijieapi.com
+DOMAIN-SUFFIX,polaris3-normal-lf.zijieapi.com
+DOMAIN-SUFFIX,polaris5-normal-lf.zijieapi.com
+DOMAIN-SUFFIX,gecko3-lf.zijieapi.com
+DOMAIN-SUFFIX,gecko5-lf.zijieapi.com
+DOMAIN-SUFFIX,mssdk3-normal-lf.zijieapi.com
+DOMAIN-SUFFIX,mssdk5-normal-lf.zijieapi.com
+DOMAIN-SUFFIX,log3-applog-lf.zijieapi.com
+DOMAIN-SUFFIX,log5-applog-lf.zijieapi.com
+DOMAIN-SUFFIX,rtlog3-applog-lf.zijieapi.com
+DOMAIN-SUFFIX,rtlog5-applog-lf.zijieapi.com
+DOMAIN-SUFFIX,log3-applog-lf.fqnovel.com
+DOMAIN-SUFFIX,log5-applog-lf.fqnovel.com
+DOMAIN-SUFFIX,rtlog3-applog-lf.fqnovel.com
+DOMAIN-SUFFIX,rtlog5-applog-lf.fqnovel.com
 
-- DOMAIN-SUFFIX,tnc1-bjlgy.zijieapi.com
-- DOMAIN-SUFFIX,tnc3-bjlgy.zijieapi.com
-- DOMAIN-SUFFIX,tnc5-bjlgy.zijieapi.com
-- DOMAIN-SUFFIX,tnc1-bjlgy.bytedance.com
-- DOMAIN-SUFFIX,tnc3-bjlgy.bytedance.com
-- DOMAIN-SUFFIX,tnc5-bjlgy.bytedance.com
-- DOMAIN-SUFFIX,tnc3-alisc1.zijieapi.com
-- DOMAIN-SUFFIX,tnc5-alisc1.zijieapi.com
-- DOMAIN-SUFFIX,tnc11-alisc1.zijieapi.com
-- DOMAIN-SUFFIX,tnc3-alisc1.bytedance.com
-- DOMAIN-SUFFIX,tnc5-alisc1.bytedance.com
-- DOMAIN-SUFFIX,tnc11-alisc1.bytedance.com
-- DOMAIN-SUFFIX,tnc3-alisc2.zijieapi.com
-- DOMAIN-SUFFIX,tnc5-alisc2.zijieapi.com
-- DOMAIN-SUFFIX,tnc11-alisc2.zijieapi.com
-- DOMAIN-SUFFIX,tnc3-alisc2.bytedance.com
-- DOMAIN-SUFFIX,tnc5-alisc2.bytedance.com
-- DOMAIN-SUFFIX,tnc11-alisc2.bytedance.com
+DOMAIN-SUFFIX,tnc1-bjlgy.zijieapi.com
+DOMAIN-SUFFIX,tnc3-bjlgy.zijieapi.com
+DOMAIN-SUFFIX,tnc5-bjlgy.zijieapi.com
+DOMAIN-SUFFIX,tnc1-bjlgy.bytedance.com
+DOMAIN-SUFFIX,tnc3-bjlgy.bytedance.com
+DOMAIN-SUFFIX,tnc5-bjlgy.bytedance.com
+DOMAIN-SUFFIX,tnc3-alisc1.zijieapi.com
+DOMAIN-SUFFIX,tnc5-alisc1.zijieapi.com
+DOMAIN-SUFFIX,tnc11-alisc1.zijieapi.com
+DOMAIN-SUFFIX,tnc3-alisc1.bytedance.com
+DOMAIN-SUFFIX,tnc5-alisc1.bytedance.com
+DOMAIN-SUFFIX,tnc11-alisc1.bytedance.com
+DOMAIN-SUFFIX,tnc3-alisc2.zijieapi.com
+DOMAIN-SUFFIX,tnc5-alisc2.zijieapi.com
+DOMAIN-SUFFIX,tnc11-alisc2.zijieapi.com
+DOMAIN-SUFFIX,tnc3-alisc2.bytedance.com
+DOMAIN-SUFFIX,tnc5-alisc2.bytedance.com
+DOMAIN-SUFFIX,tnc11-alisc2.bytedance.com
 
-- DOMAIN-SUFFIX,tnc3-aliec2.zijieapi.com
-- DOMAIN-SUFFIX,tnc5-aliec2.zijieapi.com
-- DOMAIN-SUFFIX,tnc11-aliec2.zijieapi.com
-- DOMAIN-SUFFIX,tnc3-aliec2.bytedance.com
-- DOMAIN-SUFFIX,tnc5-aliec2.bytedance.com
-- DOMAIN-SUFFIX,tnc11-aliec2.bytedance.com
+DOMAIN-SUFFIX,tnc3-aliec2.zijieapi.com
+DOMAIN-SUFFIX,tnc5-aliec2.zijieapi.com
+DOMAIN-SUFFIX,tnc11-aliec2.zijieapi.com
+DOMAIN-SUFFIX,tnc3-aliec2.bytedance.com
+DOMAIN-SUFFIX,tnc5-aliec2.bytedance.com
+DOMAIN-SUFFIX,tnc11-aliec2.bytedance.com
 
-- DOMAIN-SUFFIX,mon3-misc-lf.fqnovel.com
-- DOMAIN-SUFFIX,mon11-misc-lf.fqnovel.com
-- DOMAIN-SUFFIX,mon3-misc-hl.fqnovel.com
-- DOMAIN-SUFFIX,mon11-misc-hl.fqnovel.com
-- DOMAIN-SUFFIX,bsync3-normal-hl.zijieapi.com
-- DOMAIN-SUFFIX,bsync5-normal-hl.zijieapi.com
-- DOMAIN-SUFFIX,bsync3-normal-lf.zijieapi.com
-- DOMAIN-SUFFIX,bsync5-normal-lf.zijieapi.com
-- DOMAIN-SUFFIX,mon.toutiao.com
-- DOMAIN-SUFFIX,dzy.r147emh.com
-- DOMAIN-SUFFIX,minigame3-normal-hl.zijieapi.com
-- DOMAIN-SUFFIX,minigame5-normal-hl.zijieapi.com
-- DOMAIN-SUFFIX,gecko3-hl.zijieapi.com
-- DOMAIN-SUFFIX,gecko5-hl.zijieapi.com
-- DOMAIN-SUFFIX,gecko3-lf.zijieapi.com
-- DOMAIN-SUFFIX,gecko5-lf.zijieapi.com
-- DOMAIN-SUFFIX,frontier-toutiao.snssdk.com
-- DOMAIN-SUFFIX,p9-ad-sign.byteimg.com
-- DOMAIN-SUFFIX,lf-cdn-tos.bytescm.com
-- DOMAIN-SUFFIX,lf-cdn-tos.bytescm.com
-- DOMAIN-SUFFIX,saveu5-normal-hl.zijieapi.com
-- DOMAIN-SUFFIX,saveu5-normal-hl.zijieapi.com.c.dsa.cdnbuild.net
-- DOMAIN-SUFFIX,mssdk-bu.bytedance.com
-- DOMAIN-SUFFIX,beacon-api.aliyuncs.com
-- DOMAIN-SUFFIX,monsetting.toutiao.com
-- DOMAIN-SUFFIX,monsetting.toutiao.com.w.kunluncan.com
-- DOMAIN-SUFFIX,mon.toutiaocloud.com
-- DOMAIN-SUFFIX,feedback-c.zijieapi.com
+DOMAIN-SUFFIX,mon3-misc-lf.fqnovel.com
+DOMAIN-SUFFIX,mon11-misc-lf.fqnovel.com
+DOMAIN-SUFFIX,mon3-misc-hl.fqnovel.com
+DOMAIN-SUFFIX,mon11-misc-hl.fqnovel.com
+DOMAIN-SUFFIX,bsync3-normal-hl.zijieapi.com
+DOMAIN-SUFFIX,bsync5-normal-hl.zijieapi.com
+DOMAIN-SUFFIX,bsync3-normal-lf.zijieapi.com
+DOMAIN-SUFFIX,bsync5-normal-lf.zijieapi.com
+DOMAIN-SUFFIX,mon.toutiao.com
+DOMAIN-SUFFIX,dzy.r147emh.com
+DOMAIN-SUFFIX,api3-normal-hl.fqnovel.com
+DOMAIN-SUFFIX,api5-normal-hl.fqnovel.com
+DOMAIN-SUFFIX,minigame3-normal-hl.zijieapi.com
+DOMAIN-SUFFIX,minigame5-normal-hl.zijieapi.com
+DOMAIN-SUFFIX,gecko3-hl.zijieapi.com
+DOMAIN-SUFFIX,gecko5-hl.zijieapi.com
+DOMAIN-SUFFIX,gecko3-lf.zijieapi.com
+DOMAIN-SUFFIX,gecko5-lf.zijieapi.com
+DOMAIN-SUFFIX,frontier-toutiao.snssdk.com
+DOMAIN-SUFFIX,p9-ad-sign.byteimg.com
+DOMAIN-SUFFIX,lf-cdn-tos.bytescm.com
+DOMAIN-SUFFIX,lf-cdn-tos.bytescm.com
+DOMAIN-SUFFIX,saveu5-normal-hl.zijieapi.com
+DOMAIN-SUFFIX,saveu5-normal-hl.zijieapi.com.c.dsa.cdnbuild.net
+DOMAIN-SUFFIX,mssdk-bu.bytedance.com
+DOMAIN-SUFFIX,beacon-api.aliyuncs.com
+DOMAIN-SUFFIX,monsetting.toutiao.com
+DOMAIN-SUFFIX,monsetting.toutiao.com.w.kunluncan.com
+DOMAIN-SUFFIX,mon.toutiaocloud.com
+DOMAIN-SUFFIX,feedback-c.zijieapi.com
 
-- DOMAIN-SUFFIX,gecko.snssdk.com
-- DOMAIN-SUFFIX,gecko.snssdk.com.bytedns1.com
-- DOMAIN-SUFFIX,gecko.snssdk.com.w.cdngslb.com
-- DOMAIN-SUFFIX,gecko.snssdk.com.w.kunlunhuf.com
-- DOMAIN-SUFFIX,mon.snssdk.com
-- DOMAIN-SUFFIX,mon.snssdk.com.bytedns1.com
-- DOMAIN-SUFFIX,mon.snssdk.com.w.cdngslb.com
-- DOMAIN-SUFFIX,mon.snssdk.com.w.kunlunhuf.com
-- DOMAIN-SUFFIX,bsync.snssdk.com
-- DOMAIN-SUFFIX,bsync.snssdk.com.bytedns1.com
-- DOMAIN-SUFFIX,bsync.snssdk.com.w.cdngslb.com
-- DOMAIN-SUFFIX,bsync.snssdk.com.w.kunlunhuf.com
-- DOMAIN-SUFFIX,ad.zijieapi.com
-- DOMAIN-SUFFIX,frontier.snssdk.com
-- DOMAIN-SUFFIX,frontier.snssdk.com.bytedns1.com
-- DOMAIN-SUFFIX,frontier.snssdk.com.w.cdngslb.com
-- DOMAIN-SUFFIX,frontier.snssdk.com.w.kunlunhuf.com
-- DOMAIN-SUFFIX,sf26-tos.ttwebview.com
+DOMAIN-SUFFIX,gecko.snssdk.com
+DOMAIN-SUFFIX,gecko.snssdk.com.bytedns1.com
+DOMAIN-SUFFIX,gecko.snssdk.com.w.cdngslb.com
+DOMAIN-SUFFIX,gecko.snssdk.com.w.kunlunhuf.com
+DOMAIN-SUFFIX,mon.snssdk.com
+DOMAIN-SUFFIX,mon.snssdk.com.bytedns1.com
+DOMAIN-SUFFIX,mon.snssdk.com.w.cdngslb.com
+DOMAIN-SUFFIX,mon.snssdk.com.w.kunlunhuf.com
+DOMAIN-SUFFIX,bsync.snssdk.com
+DOMAIN-SUFFIX,bsync.snssdk.com.bytedns1.com
+DOMAIN-SUFFIX,bsync.snssdk.com.w.cdngslb.com
+DOMAIN-SUFFIX,bsync.snssdk.com.w.kunlunhuf.com
+DOMAIN-SUFFIX,ad.zijieapi.com
+DOMAIN-SUFFIX,frontier.snssdk.com
+DOMAIN-SUFFIX,frontier.snssdk.com.bytedns1.com
+DOMAIN-SUFFIX,frontier.snssdk.com.w.cdngslb.com
+DOMAIN-SUFFIX,frontier.snssdk.com.w.kunlunhuf.com
+DOMAIN-SUFFIX,sf26-tos.ttwebview.com
 
-- DOMAIN-SUFFIX,p6-be-pack-sign.pglstatp-toutiao.com
-- DOMAIN-SUFFIX,p9-be-pack-sign.pglstatp-toutiao.com
+DOMAIN-SUFFIX,p6-be-pack-sign.pglstatp-toutiao.com
+DOMAIN-SUFFIX,p9-be-pack-sign.pglstatp-toutiao.com
 
-- DOMAIN-SUFFIX,dm-hl.toutiao.com
-- DOMAIN-SUFFIX,i.snssdk.com
+DOMAIN-SUFFIX,dm-hl.toutiao.com
+DOMAIN-SUFFIX,i.snssdk.com
 
-- DOMAIN-SUFFIX,tnc1-bjlgy.snssdk.com
-- DOMAIN-SUFFIX,tnc3-bjlgy.snssdk.com
-- DOMAIN-SUFFIX,tnc5-bjlgy.snssdk.com
-- DOMAIN-SUFFIX,tnc3-alisc1.snssdk.com
-- DOMAIN-SUFFIX,tnc5-alisc1.snssdk.com
-- DOMAIN-SUFFIX,tnc11-alisc1.snssdk.com
-- DOMAIN-SUFFIX,tnc3-alisc2.snssdk.com
-- DOMAIN-SUFFIX,tnc5-alisc2.snssdk.com
-- DOMAIN-SUFFIX,tnc11-alisc2.snssdk.com
-- DOMAIN-SUFFIX,tnc3-aliec2.snssdk.com
-- DOMAIN-SUFFIX,tnc5-aliec2.snssdk.com
-- DOMAIN-SUFFIX,tnc11-aliec2.snssdk.com
+DOMAIN-SUFFIX,tnc1-bjlgy.snssdk.com
+DOMAIN-SUFFIX,tnc3-bjlgy.snssdk.com
+DOMAIN-SUFFIX,tnc5-bjlgy.snssdk.com
+DOMAIN-SUFFIX,tnc3-alisc1.snssdk.com
+DOMAIN-SUFFIX,tnc5-alisc1.snssdk.com
+DOMAIN-SUFFIX,tnc11-alisc1.snssdk.com
+DOMAIN-SUFFIX,tnc3-alisc2.snssdk.com
+DOMAIN-SUFFIX,tnc5-alisc2.snssdk.com
+DOMAIN-SUFFIX,tnc11-alisc2.snssdk.com
+DOMAIN-SUFFIX,tnc3-aliec2.snssdk.com
+DOMAIN-SUFFIX,tnc5-aliec2.snssdk.com
+DOMAIN-SUFFIX,tnc11-aliec2.snssdk.com
+
+DOMAIN-SUFFIX,pstatp.com
+
+
+
 
 # 字节A/B测试
-- DOMAIN-SUFFIX,abtest3-misc-hl.zijieapi.com
-- DOMAIN-SUFFIX,abtest5-misc-hl.zijieapi.com
-- DOMAIN-SUFFIX,abtest3-misc-lf.zijieapi.com
-- DOMAIN-SUFFIX,abtest5-misc-lf.zijieapi.com
+DOMAIN-SUFFIX,abtest3-misc-hl.zijieapi.com
+DOMAIN-SUFFIX,abtest5-misc-hl.zijieapi.com
+DOMAIN-SUFFIX,abtest3-misc-lf.zijieapi.com
+DOMAIN-SUFFIX,abtest5-misc-lf.zijieapi.com
 
 # dig.bdurl.net 广告过滤
-- DOMAIN-SUFFIX,dig.bdurl.net
-- DOMAIN-SUFFIX,dig-sc.bdurl.net
-- DOMAIN-SUFFIX,dig-ec.bdurl.net
-- DOMAIN-SUFFIX,bgp.netarch-alisc1-edge-lb.l.bytedns.net
-- DOMAIN-SUFFIX,sub1.bgp.netarch-alisc1-edge-lb.l.bytedns.net
-- DOMAIN-SUFFIX,sub2.bgp.netarch-alisc1-edge-lb.l.bytedns.net
-- DOMAIN-SUFFIX,dig.bdurl.net.w.cdngslb.com
+DOMAIN-SUFFIX,dig.bdurl.net
+DOMAIN-SUFFIX,dig-sc.bdurl.net
+DOMAIN-SUFFIX,dig-ec.bdurl.net
+DOMAIN-SUFFIX,bgp.netarch-alisc1-edge-lb.l.bytedns.net
+DOMAIN-SUFFIX,sub1.bgp.netarch-alisc1-edge-lb.l.bytedns.net
+DOMAIN-SUFFIX,sub2.bgp.netarch-alisc1-edge-lb.l.bytedns.net
+DOMAIN-SUFFIX,dig.bdurl.net.w.cdngslb.com
 
 # dig.zjurl.cn 广告过滤
-- DOMAIN-SUFFIX,zjurl.cn
-- DOMAIN-SUFFIX,dig.zjurl.cn
+DOMAIN-SUFFIX,zjurl.cn
+DOMAIN-SUFFIX,dig.zjurl.cn
 #IP-CIDR,101.36.166.16/24
 #IP-CIDR,2401:be00:0:22::5/24
 #IP-CIDR,2401:be00::22:0:0:0:5/24
 
 
-- DOMAIN-SUFFIX,mssdk.bytedance.com
+DOMAIN-SUFFIX,mssdk.bytedance.com
 
 # 算法推荐监控
-- DOMAIN-SUFFIX,pitaya.bytedance.com
+DOMAIN-SUFFIX,pitaya.bytedance.com
 
-- DOMAIN-SUFFIX,webcast-open-lf.douyin.com
-- DOMAIN-SUFFIX,webcast3-open-lf.douyin.com
-- DOMAIN-SUFFIX,webcast5-open-lf.douyin.com
-- DOMAIN-SUFFIX,webcast-open-hl.douyin.com
-- DOMAIN-SUFFIX,webcast3-open-hl.douyin.com
-- DOMAIN-SUFFIX,webcast5-open-hl.douyin.com
+DOMAIN-SUFFIX,webcast-open-lf.douyin.com
+DOMAIN-SUFFIX,webcast3-open-lf.douyin.com
+DOMAIN-SUFFIX,webcast5-open-lf.douyin.com
 
-- DOMAIN-SUFFIX,datacollector-drcn.dt.hicloud.com
 
-- DOMAIN-SUFFIX,t1.dcloud.net.cn
-- DOMAIN-SUFFIX,t2.dcloud.net.cn
-- DOMAIN-SUFFIX,s1.dcloud.net.cn
-- DOMAIN-SUFFIX,s2.dcloud.net.cn
-- DOMAIN-SUFFIX,ac1.dcloud.net.cn
-- DOMAIN-SUFFIX,ac2.dcloud.net.cn
+DOMAIN-SUFFIX,datacollector-drcn.dt.hicloud.com
+
+DOMAIN-SUFFIX,t1.dcloud.net.cn
+DOMAIN-SUFFIX,t2.dcloud.net.cn
+DOMAIN-SUFFIX,s1.dcloud.net.cn
+DOMAIN-SUFFIX,s2.dcloud.net.cn
+DOMAIN-SUFFIX,ac1.dcloud.net.cn
+DOMAIN-SUFFIX,ac2.dcloud.net.cn
+
 
 
 # 快手广告
-- DOMAIN-SUFFIX,adkwai.com
-- DOMAIN-SUFFIX,p1.adkwai.com
-- DOMAIN-SUFFIX,p2.adkwai.com
-- DOMAIN-SUFFIX,p3.adkwai.com
+DOMAIN-SUFFIX,adkwai.com
+DOMAIN-SUFFIX,p1.adkwai.com
+DOMAIN-SUFFIX,p2.adkwai.com
+DOMAIN-SUFFIX,p3.adkwai.com
 
 # UBiX 广告
-- DOMAIN-SUFFIX,mdt.ubixioe.com
-- DOMAIN-SUFFIX,sdk-data.ubixioe.com
-- DOMAIN-SUFFIX,entry.ubixioe.com
-- DOMAIN-SUFFIX,entry-test.ubixioe.com
+DOMAIN-SUFFIX,mdt.ubixioe.com
+DOMAIN-SUFFIX,sdk-data.ubixioe.com
+DOMAIN-SUFFIX,entry.ubixioe.com
+DOMAIN-SUFFIX,entry-test.ubixioe.com
 
 # inmobi 广告
-- DOMAIN-SUFFIX,i.w.inmobi.cn
-- DOMAIN-SUFFIX,i.l.inmobicdn.cn
-- DOMAIN-SUFFIX,config.inmobi.cn
-- DOMAIN-SUFFIX,sdk.inmobi.cn
-- DOMAIN-SUFFIX,sdkm.w.inmobi.cn
-- DOMAIN-SUFFIX,sdktm.w.inmobi.cn
-- DOMAIN-SUFFIX,sdktm.w.inmobi.cn
-- DOMAIN-SUFFIX,telemetry.sdk.inmobi.cn
-- DOMAIN-SUFFIX,dock.inmobi.cn
-- DOMAIN-SUFFIX,i.l.inmobicdn.cn
+DOMAIN-SUFFIX,i.w.inmobi.cn
+DOMAIN-SUFFIX,i.l.inmobicdn.cn
+DOMAIN-SUFFIX,config.inmobi.cn
+DOMAIN-SUFFIX,sdk.inmobi.cn
+DOMAIN-SUFFIX,sdkm.w.inmobi.cn
+DOMAIN-SUFFIX,sdktm.w.inmobi.cn
+DOMAIN-SUFFIX,sdktm.w.inmobi.cn
+DOMAIN-SUFFIX,telemetry.sdk.inmobi.cn
+DOMAIN-SUFFIX,dock.inmobi.cn
+DOMAIN-SUFFIX,i.l.inmobicdn.cn
 
 # baomihua 爆米花视频 广告
-- DOMAIN-SUFFIX,mha.baomihua.com
-- DOMAIN-SUFFIX,mhx.baomihua.com
-- DOMAIN-SUFFIX,mh.baomihua.com
-- DOMAIN-SUFFIX,mhx-test.tuiyes.com
-- DOMAIN-SUFFIX,djs.baomihua.com
-- DOMAIN-SUFFIX,b1.baomihua.com
-- DOMAIN-SUFFIX,a.baomihua.com
-- DOMAIN-SUFFIX,resource.baomihua.com
-- DOMAIN-SUFFIX,29293.com
-- DOMAIN-SUFFIX,quickvideo.29293.com
-- DOMAIN-SUFFIX,mha.baomihua.cn
-- DOMAIN-SUFFIX,mhx.baomihua.cn
-- DOMAIN-SUFFIX,mh.baomihua.cn
-- DOMAIN-SUFFIX,mhx-test.tuiyes.cn
-- DOMAIN-SUFFIX,djs.baomihua.cn
-- DOMAIN-SUFFIX,b1.baomihua.cn
-- DOMAIN-SUFFIX,a.baomihua.cn
-- DOMAIN-SUFFIX,resource.baomihua.cn
+DOMAIN-SUFFIX,mha.baomihua.com
+DOMAIN-SUFFIX,mhx.baomihua.com
+DOMAIN-SUFFIX,mh.baomihua.com
+DOMAIN-SUFFIX,mhx-test.tuiyes.com
+DOMAIN-SUFFIX,djs.baomihua.com
+DOMAIN-SUFFIX,b1.baomihua.com
+DOMAIN-SUFFIX,a.baomihua.com
+DOMAIN-SUFFIX,resource.baomihua.com
+DOMAIN-SUFFIX,29293.com
+DOMAIN-SUFFIX,quickvideo.29293.com
+DOMAIN-SUFFIX,mha.baomihua.cn
+DOMAIN-SUFFIX,mhx.baomihua.cn
+DOMAIN-SUFFIX,mh.baomihua.cn
+DOMAIN-SUFFIX,mhx-test.tuiyes.cn
+DOMAIN-SUFFIX,djs.baomihua.cn
+DOMAIN-SUFFIX,b1.baomihua.cn
+DOMAIN-SUFFIX,a.baomihua.cn
+DOMAIN-SUFFIX,resource.baomihua.cn
 
-- DOMAIN-SUFFIX,n5371.com
-- DOMAIN-SUFFIX,885964.com
-- DOMAIN-SUFFIX,93261587768.com
-- DOMAIN-SUFFIX,9767t.com
-- DOMAIN-SUFFIX,8806v.com
-- DOMAIN-SUFFIX,3938t.com
-- DOMAIN-SUFFIX,6582s.com
-- DOMAIN-SUFFIX,n1164.com
 
-- DOMAIN-SUFFIX,tklm11.top
-- DOMAIN-SUFFIX,tklm22.top
-- DOMAIN-SUFFIX,tklm33.top
-- DOMAIN-SUFFIX,tklm33.top
-- DOMAIN-SUFFIX,tklm44.top
-- DOMAIN-SUFFIX,tklm55.top
-- DOMAIN-SUFFIX,tklm66.top
-- DOMAIN-SUFFIX,tklm77.top
-- DOMAIN-SUFFIX,tklm88.top
-- DOMAIN-SUFFIX,tklm99.top
+DOMAIN-SUFFIX,n5371.com
+DOMAIN-SUFFIX,885964.com
+DOMAIN-SUFFIX,93261587768.com
+DOMAIN-SUFFIX,9767t.com
+DOMAIN-SUFFIX,8806v.com
+DOMAIN-SUFFIX,3938t.com
+DOMAIN-SUFFIX,6582s.com
+DOMAIN-SUFFIX,n1164.com
+
+DOMAIN-SUFFIX,tklm11.top
+DOMAIN-SUFFIX,tklm22.top
+DOMAIN-SUFFIX,tklm33.top
+DOMAIN-SUFFIX,tklm33.top
+DOMAIN-SUFFIX,tklm44.top
+DOMAIN-SUFFIX,tklm55.top
+DOMAIN-SUFFIX,tklm66.top
+DOMAIN-SUFFIX,tklm77.top
+DOMAIN-SUFFIX,tklm88.top
+DOMAIN-SUFFIX,tklm99.top
 # 天空联盟
-- DOMAIN-SUFFIX,tiankonglm.com
+DOMAIN-SUFFIX,tiankonglm.com
 
-- DOMAIN-SUFFIX,ctobsnssdk.com
+DOMAIN-SUFFIX,ctobsnssdk.com
