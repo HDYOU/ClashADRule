@@ -34,3 +34,4 @@ DOMAIN-SUFFIX,greasyfork.org
 # 番茄
 DOMAIN-SUFFIX,novel.snssdk.com
 DOMAIN-SUFFIX,reading.snssdk.com
+DOMAIN-SUFFIX,reading-hl.snssdk.com
