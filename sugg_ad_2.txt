@@ -78,7 +78,7 @@ DOMAIN-SUFFIX,share.jileme.net
 DOMAIN-KEYWORD,byteorge.
 DOMAIN-KEYWORD,bytegoofy.
 DOMAIN-KEYWORD,bytedance.
-DOMAIN-KEYWORD,lf.fqnovel.
+#DOMAIN-KEYWORD,lf.fqnovel.
 DOMAIN-KEYWORD,ad-sign.
 DOMAIN-KEYWORD,mgsdk-sign.
 DOMAIN-KEYWORD,dig.bdurl.net
