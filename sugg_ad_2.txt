@@ -144,7 +144,7 @@ DOMAIN-SUFFIX,stars.shuqireader.com
 DOMAIN-SUFFIX,partner.uc.cn
 DOMAIN-SUFFIX,audio-cdn.shuqireader.com
 DOMAIN-SUFFIX,thirdwx.qlogo.cn
-DOMAIN-SUFFIX,g.alicdn.com
+#DOMAIN-SUFFIX,g.alicdn.com
 DOMAIN-SUFFIX,arms-retcode.aliyuncs.com
 DOMAIN-SUFFIX,px.effirst.com
 DOMAIN-SUFFIX,contentcenter-drcn.dbankcdn.cn
