@@ -36,4 +36,13 @@ DOMAIN-SUFFIX,novel.snssdk.com
 DOMAIN-SUFFIX,reading.snssdk.com
 DOMAIN-SUFFIX,reading-hl.snssdk.com
 
+# 代理
+DOMAIN-SUFFIX,oopscloud.xyz
+DOMAIN-SUFFIX,nocsdn.com
+DOMAIN-SUFFIX,3b3.net
+DOMAIN-SUFFIX,3b3.fun
+DOMAIN-SUFFIX,3b3.vip
+DOMAIN-SUFFIX,66a.net
+DOMAIN-SUFFIX,66a.vip
+DOMAIN-SUFFIX,66a.fun
 
