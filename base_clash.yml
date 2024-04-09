@@ -57,28 +57,28 @@ rule-providers:
     type: http
     behavior: classical
     path: ./rule_providers/adblock.yml
-    url: "https://raw.gitmirror.com/peasoft/NoMoreWalls/master/snippets/adblock.yml"
+    url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/snippets/adblock.yml"
     interval: 21600 #6h
     format: yaml
   proxy:
     type: http
     behavior: classical
     path: ./rule_providers/proxy.yml
-    url: "https://raw.gitmirror.com/peasoft/NoMoreWalls/master/snippets/proxy.yml"
+    url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/snippets/proxy.yml"
     interval: 86400 #24h
     format: yaml
   direct:
     type: http
     behavior: classical
     path: ./rule_providers/direct.yml
-    url: "https://raw.gitmirror.com/peasoft/NoMoreWalls/master/snippets/direct.yml"
+    url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/snippets/direct.yml"
     interval: 86400 #24h
     format: yaml
   region:
     type: http
     behavior: classical
     path: ./rule_providers/region.yml
-    url: "https://raw.gitmirror.com/peasoft/NoMoreWalls/master/snippets/region.yml"
+    url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/snippets/region.yml"
     interval: 86400 #24h
     format: yaml
   direct2:
@@ -99,56 +99,56 @@ rule-providers:
     type: http
     behavior: classical
 #    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt"
-    url: "https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ProxyGFWlist.yaml"
+    url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ProxyGFWlist.yaml"
     path: ./ruleset/ProxyGFWlist.yaml
     interval: 86400 #24h
     format: yaml
   ChinaCompanyIp:
     type: http
     behavior: ipcidr
-    url: "https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaCompanyIp.yaml"
+    url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaCompanyIp.yaml"
     path: ./ruleset/gfw.yaml
     interval: 86400 #24h
     format: yaml
   ChinaDomain:
     type: http
     behavior: classical
-    url: "https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaDomain.yaml"
+    url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaDomain.yaml"
     path: ./ruleset/ChinaDomain.yaml
     interval: 86400 #24h
     format: yaml
   ChinaIp:
     type: http
     behavior: ipcidr
-    url: "https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaIp.yaml"
+    url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaIp.yaml"
     path: ./ruleset/ChinaIp.yaml
     interval: 86400 #24h
     format: yaml
   ChinaMedia:
     type: http
     behavior: classical
-    url: "https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaMedia.yaml"
+    url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaMedia.yaml"
     path: ./ruleset/ChinaMedia.yaml
     interval: 86400 #24h
     format: yaml
   LocalAreaNetwork:
     type: http
     behavior: classical
-    url: "https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/Providers/LocalAreaNetwork.yaml"
+    url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/LocalAreaNetwork.yaml"
     path: ./ruleset/LocalAreaNetwork.yaml
     interval: 86400 #24h
     format: yaml
   自定义广告拦截:
     type: http
     behavior: classical
-    url: "https://raw.gitmirror.com//HDYOU/ClashADRule/main/self_payload_ad.yml"
+    url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com//HDYOU/ClashADRule/main/self_payload_ad.yml"
     path: ./ruleset/自定义广告拦截.yaml
     interval: 86400 #24h
     format: yaml
   自定义广告白名单:
     type: http
     behavior: classical
-    url: "https://raw.gitmirror.com//HDYOU/ClashADRule/main/self_payload_whitelist.yml"
+    url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/HDYOU/ClashADRule/main/self_payload_whitelist.yml"
     path: ./ruleset/自定义广告白名单.yaml
     interval: 86400 #24h
     format: yaml
