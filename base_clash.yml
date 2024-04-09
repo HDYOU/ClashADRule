@@ -84,21 +84,21 @@ rule-providers:
   direct2:
     behavior: domain
     type: http
-    url: "https://raw.gitmirror.com/Loyalsoldier/clash-rules/release/direct.txt"
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt"
     interval: 86400 #24h
     path: ./ruleset/direct2.yaml
     format: yaml
   telegramcidr:
     type: http
     behavior: ipcidr
-    url: "https://raw.gitmirror.com/Loyalsoldier/clash-rules/release/telegramcidr.txt"
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt"
     path: ./ruleset/telegramcidr.yaml
     interval: 86400 #24h
     format: yaml
   ProxyGFWlist:
     type: http
     behavior: classical
-#    url: "https://raw.gitmirror.com/Loyalsoldier/clash-rules/release/gfw.txt"
+#    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt"
     url: "https://raw.gitmirror.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ProxyGFWlist.yaml"
     path: ./ruleset/ProxyGFWlist.yaml
     interval: 86400 #24h
