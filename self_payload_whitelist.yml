@@ -37,3 +37,6 @@ payload:
 # 番茄
 - DOMAIN-SUFFIX,novel.snssdk.com
 - DOMAIN-SUFFIX,reading.snssdk.com
+
+# 图片
+- DOMAIN-SUFFIX,wp.com
