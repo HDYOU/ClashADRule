@@ -121,7 +121,7 @@ payload:
 - DOMAIN-SUFFIX,hc-ssp.sm.cn
 - DOMAIN-SUFFIX,logrcv.aiclk.com
 - DOMAIN-SUFFIX,open.e.kuaishou.cn
-- DOMAIN-SUFFIX,alicdn.com
+#- DOMAIN-SUFFIX,alicdn.com
 - DOMAIN-SUFFIX,apmplus.volces.com
 - DOMAIN-SUFFIX,ulogs.umeng.com
 - DOMAIN-SUFFIX,api-gw.wtzw.com
@@ -144,7 +144,7 @@ payload:
 - DOMAIN-SUFFIX,partner.uc.cn
 - DOMAIN-SUFFIX,audio-cdn.shuqireader.com
 - DOMAIN-SUFFIX,thirdwx.qlogo.cn
-- DOMAIN-SUFFIX,g.alicdn.com
+#- DOMAIN-SUFFIX,g.alicdn.com
 - DOMAIN-SUFFIX,arms-retcode.aliyuncs.com
 - DOMAIN-SUFFIX,px.effirst.com
 - DOMAIN-SUFFIX,contentcenter-drcn.dbankcdn.cn
