@@ -116,7 +116,7 @@ DOMAIN-SUFFIX,cmpassport.com
 DOMAIN-SUFFIX,hc-ssp.sm.cn
 DOMAIN-SUFFIX,logrcv.aiclk.com
 DOMAIN-SUFFIX,open.e.kuaishou.cn
-DOMAIN-SUFFIX,alicdn.com
+# DOMAIN-SUFFIX,alicdn.com
 DOMAIN-SUFFIX,apmplus.volces.com
 DOMAIN-SUFFIX,ulogs.umeng.com
 DOMAIN-SUFFIX,api-gw.wtzw.com
@@ -131,15 +131,15 @@ DOMAIN-SUFFIX,janapi.jd.com
 DOMAIN-SUFFIX,mos.m.taobao.com
 DOMAIN-SUFFIX,h-adashx.ut.taobao.com
 DOMAIN-SUFFIX,fapi.xdrun.com
-DOMAIN-SUFFIX,download.alicdn.com
-DOMAIN-SUFFIX,alpha.alicdn.com
+# DOMAIN-SUFFIX,download.alicdn.com
+# DOMAIN-SUFFIX,alpha.alicdn.com
 DOMAIN-SUFFIX,opehs.tanx.com
 DOMAIN-SUFFIX,audid-api.taobao.com
 DOMAIN-SUFFIX,stars.shuqireader.com
 DOMAIN-SUFFIX,partner.uc.cn
 DOMAIN-SUFFIX,audio-cdn.shuqireader.com
 DOMAIN-SUFFIX,thirdwx.qlogo.cn
-DOMAIN-SUFFIX,g.alicdn.com
+# DOMAIN-SUFFIX,g.alicdn.com
 DOMAIN-SUFFIX,arms-retcode.aliyuncs.com
 DOMAIN-SUFFIX,px.effirst.com
 DOMAIN-SUFFIX,contentcenter-drcn.dbankcdn.cn
@@ -217,12 +217,12 @@ DOMAIN-SUFFIX,cc.map.qq.com
 DOMAIN-SUFFIX,aegis.qq.com
 DOMAIN-SUFFIX,cdn-ads.oss-cn-shanghai.aliyuncs.com
 DOMAIN-SUFFIX,ynuf.aliapp.org
-DOMAIN-SUFFIX,unidesk.alicdn.com
+# DOMAIN-SUFFIX,unidesk.alicdn.com
 DOMAIN-SUFFIX,nbsdk-baichuan.alicdn.com
 DOMAIN-SUFFIX,baichuan-sdk.alicdn.com
 DOMAIN-SUFFIX,ilce.alicdn.com
 DOMAIN-SUFFIX,abtest.alibaba.com
-DOMAIN-SUFFIX,proxy-mob-cld.alicdn.com
+# DOMAIN-SUFFIX,proxy-mob-cld.alicdn.com
 DOMAIN-SUFFIX,uyunad.com
 DOMAIN-SUFFIX,ali-ad.a.yximgs.com
 DOMAIN-SUFFIX,adashbc.m.taobao.com
@@ -256,3 +256,6 @@ DOMAIN-KEYWORD,ulog.
 DOMAIN-KEYWORD,xlog.
 DOMAIN-KEYWORD,ads.
 IP-CIDR,0.0.0.0/32
+
+# 数据搜集
+DOMAIN-SUFFIX,in.appcenter.ms

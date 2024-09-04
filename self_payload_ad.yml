@@ -530,3 +530,6 @@ payload:
 - DOMAIN-SUFFIX,tiankonglm.com
 
 - DOMAIN-SUFFIX,ctobsnssdk.com
+
+# 数据搜集
+- DOMAIN-SUFFIX,in.appcenter.ms
